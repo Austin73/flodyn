@@ -94,22 +94,22 @@
         <VRow>
           <VCol cols="6">
             <VCard>
-              <VImg cover src="https://placehold.co/600x600" />
+              <VImg cover src="https://picsum.photos/600/600?random=1" />
             </VCard>
           </VCol>
           <VCol cols="6">
             <VCard height="100%" width="100%">
-              <VImg cover src="https://placehold.co/600x600" />
+              <VImg cover src="https://picsum.photos/600/600?random=2" />
             </VCard>
           </VCol>
           <VCol cols="6">
             <VCard height="100%" width="100%">
-              <VImg cover src="https://placehold.co/600x600" />
+              <VImg cover src="https://picsum.photos/600/600?random=3" />
             </VCard>
           </VCol>
           <VCol cols="6">
             <VCard height="100%" width="100%">
-              <VImg cover src="https://placehold.co/600x600" />
+              <VImg cover src="https://picsum.photos/600/600?random=4" />
             </VCard>
           </VCol>
         </VRow>
@@ -119,7 +119,7 @@
 
   <!-- Products & Services -->
   <FlodyneContainer color="primary">
-    <template #title>Product & Services <span class="text-secondary">we Offer</span></template>
+    <template #title>Product & Services <span class="text-secondary">We Offer</span></template>
     <template #subtitle>
 
       At Flodyne Business, we specialize in leveraging cutting-edge technologies and expertise to optimize fluid
@@ -128,7 +128,7 @@
     <VRow class="my-16">
       <VCol cols="4">
         <VCard rounded="lg">
-          <VImg src="https://placehold.co/600x600" content-class="d-flex flex-column justify-space-between">
+          <VImg src="https://picsum.photos/id/12/600/600" content-class="d-flex flex-column justify-space-between">
             <VCardTitle>Flodyne Machine</VCardTitle>
             <VCardItem>
               <VBtn color="secondary" class="px-8">Learn More</VBtn>
@@ -138,7 +138,7 @@
       </VCol>
       <VCol cols="4">
         <VCard rounded="lg">
-          <VImg src="https://placehold.co/600x600" content-class="d-flex flex-column justify-space-between">
+          <VImg src="https://picsum.photos/id/12/600/600" content-class="d-flex flex-column justify-space-between">
             <VCardTitle>Flodyne Machine</VCardTitle>
             <VCardItem>
               <VBtn color="secondary" class="px-8">Learn More</VBtn>
@@ -148,7 +148,7 @@
       </VCol>
       <VCol cols="4">
         <VCard rounded="lg">
-          <VImg src="https://placehold.co/600x600" content-class="d-flex flex-column justify-space-between">
+          <VImg src="https://picsum.photos/id/12/600/600" content-class="d-flex flex-column justify-space-between">
             <VCardTitle>Flodyne Machine</VCardTitle>
             <VCardItem>
               <VBtn color="secondary" class="px-8">Learn More</VBtn>
@@ -174,7 +174,7 @@
       Metrics are the backbone of performance evaluation and optimization. At Flodyne Business, we leverage a range of
       key metrics to ensure that our solutions deliver tangible results and drive continuous improvement
     </template>
-    <VImg max-width="400" cover class="mx-auto my-10" src="https://placehold.co/600x600"></VImg>
+    <VImg max-width="400" cover class="mx-auto my-10" src="/images/home/metrics.svg"></VImg>
   </FlodyneContainer>
 
   <!-- Infra/Gallery -->
@@ -182,22 +182,22 @@
     <template #title>Infra/Gallery</template>
     <VRow>
       <VCol cols="5">
-        <VImg cover src="https://placehold.co/600x510" rounded="lg"></VImg>
+        <VImg cover src="https://picsum.photos/id/12/600/510" rounded="lg"></VImg>
       </VCol>
       <VCol cols="4">
         <VRow>
           <VCol cols="12">
-            <VImg cover src="https://placehold.co/600x300" rounded="lg"></VImg>
+            <VImg cover src="https://picsum.photos/600/300" rounded="lg"></VImg>
           </VCol>
           <VCol cols="12">
-            <VImg cover src="https://placehold.co/600x300" rounded="lg"></VImg>
+            <VImg cover src="https://picsum.photos/600/300" rounded="lg"></VImg>
           </VCol>
         </VRow>
       </VCol>
       <VCol cols="3">
         <VRow>
           <VCol cols="12">
-            <VImg cover src="https://placehold.co/600x550" rounded="lg"></VImg>
+            <VImg cover src="https://picsum.photos/600/550" rounded="lg"></VImg>
           </VCol>
           <VCol cols="12">
             <VIcon icon="mdi-arrow-right" size="120"></VIcon>
@@ -257,7 +257,7 @@
           <VListItem class="px-0">
             <template #prepend>
               <VAvatar size="80">
-                <VImg src="https://placehold.co/80x80"></VImg>
+                <VImg src="https://picsum.photos/80/80"></VImg>
               </VAvatar>
             </template>
             <VListItemTitle class="font-weight-bold text-secondary">Ken Kieu</VListItemTitle>
@@ -281,7 +281,7 @@
           <VListItem class="px-0">
             <template #prepend>
               <VAvatar size="80">
-                <VImg src="https://placehold.co/80x80"></VImg>
+                <VImg src="https://picsum.photos/80/80"></VImg>
               </VAvatar>
             </template>
             <VListItemTitle class="font-weight-bold text-secondary">Ken Kieu</VListItemTitle>
@@ -305,7 +305,7 @@
           <VListItem class="px-0">
             <template #prepend>
               <VAvatar size="80">
-                <VImg src="https://placehold.co/80x80"></VImg>
+                <VImg src="https://picsum.photos/80/80"></VImg>
               </VAvatar>
             </template>
             <VListItemTitle class="font-weight-bold text-secondary">Ken Kieu</VListItemTitle>
