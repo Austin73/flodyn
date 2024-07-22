@@ -1,0 +1,345 @@
+<template>
+
+  <!-- Banner -->
+  <FlodyneContainer color="primary" padless>
+    <VToolbar color="transparent">
+      <template #prepend>
+        <VImg cover width="180" src="/images/logo.svg" alt="Flodyne Logo" />
+      </template>
+      <VSpacer />
+      <VBtn v-for="link in links" :key=" link.title " variant="text" to="/about">
+        {{ link.title }}
+      </VBtn>
+      <VSpacer />
+      <VBtn variant="elevated" color="secondary" rounded="pill" class="px-8">Contact Us</VBtn>
+    </VToolbar>
+    <VRow align="center">
+      <VCol cols="6">
+        <div>
+          <div class="text-h1">
+            Welcome to <div class="text-secondary">Flodyne</div>
+          </div>
+          <div class="my-10">
+            Flodyne Business specializes in providing innovative solutions for optimizing fluid dynamics across
+            various
+            industries. Our cutting-edge technologies and expertise help businesses achieve greater performance,
+            efficiency,
+            and cost-effectiveness in their operations.
+          </div>
+          <VBtn size="large" rounded="pill" color="secondary"> Optimize your operation</VBtn>
+        </div>
+      </VCol>
+      <VCol cols="6">
+        <VImg src="/images/home/home-hero.svg" alt="Flodyne Home Hero" />
+      </VCol>
+    </VRow>
+  </FlodyneContainer>
+  <!-- Client logos -->
+  <FlodyneContainer padless>
+    <VRow>
+      <VCol cols="2">
+        <VImg max-width="120" src="/images/home/client-logo.svg"></VImg>
+      </VCol>
+      <VCol cols="2">
+        <VImg max-width="120" src="/images/home/client-logo.svg"></VImg>
+      </VCol>
+      <VCol cols="2">
+        <VImg max-width="120" src="/images/home/client-logo.svg"></VImg>
+      </VCol>
+      <VCol cols="2">
+        <VImg max-width="120" src="/images/home/client-logo.svg"></VImg>
+      </VCol>
+      <VCol cols="2">
+        <VImg max-width="120" src="/images/home/client-logo.svg"></VImg>
+      </VCol>
+      <VCol cols="2">
+        <VImg max-width="120" src="/images/home/client-logo.svg"></VImg>
+      </VCol>
+    </VRow>
+  </FlodyneContainer>
+  <!-- What we do -->
+  <FlodyneContainer padless>
+    <VRow>
+      <VCol cols="6">
+        <h3 class="text-h3 text-primary">
+          What we do
+        </h3>
+        <div class="mt-8">At Flodyne Business, we specialize in leveraging cutting-edge technologies and expertise to
+          optimize fluid
+          dynamics across various industries.</div>
+        <div class="mt-8">
+          <strong class="text-secondary">Advanced Computational Fluid Dynamics (CFD) Simulations:</strong>
+          Utilizing state-of-the-art simulation tools, we analyze and model fluid flow, heat transfer, and related
+          phenomena to optimize system performance and efficiency.
+        </div>
+        <div class="mt-8">
+
+          <strong class="text-secondary">Customized Fluid Handling Systems:</strong>
+          We design and engineer tailored fluid handling systems to meet the unique requirements of our clients,
+          ensuring
+          seamless operation and maximum productivity.
+        </div>
+        <div class="mt-8">
+          <strong class="text-secondary">Consultancy Services:</strong>
+          Our team of experienced engineers provides personalized consultancy services to address specific challenges
+          and
+          optimize fluid dynamics in existing systems, processes, and facilities.
+        </div>
+        <div class="mt-8">
+          <VBtn color="secondary" rounded="pill">Know More</VBtn>
+        </div>
+
+      </VCol>
+      <VCol cols="6">
+        <VRow>
+          <VCol cols="6">
+            <VCard>
+              <VImg cover src="https://placehold.co/600x600" />
+            </VCard>
+          </VCol>
+          <VCol cols="6">
+            <VCard height="100%" width="100%">
+              <VImg cover src="https://placehold.co/600x600" />
+            </VCard>
+          </VCol>
+          <VCol cols="6">
+            <VCard height="100%" width="100%">
+              <VImg cover src="https://placehold.co/600x600" />
+            </VCard>
+          </VCol>
+          <VCol cols="6">
+            <VCard height="100%" width="100%">
+              <VImg cover src="https://placehold.co/600x600" />
+            </VCard>
+          </VCol>
+        </VRow>
+      </VCol>
+    </VRow>
+  </FlodyneContainer>
+
+  <!-- Products & Services -->
+  <FlodyneContainer color="primary">
+    <template #title>Product & Services <span class="text-secondary">we Offer</span></template>
+    <template #subtitle>
+
+      At Flodyne Business, we specialize in leveraging cutting-edge technologies and expertise to optimize fluid
+      dynamics across various industries. Our comprehensive suite of services includes:
+    </template>
+    <VRow class="my-16">
+      <VCol cols="4">
+        <VCard rounded="lg">
+          <VImg src="https://placehold.co/600x600" content-class="d-flex flex-column justify-space-between">
+            <VCardTitle>Flodyne Machine</VCardTitle>
+            <VCardItem>
+              <VBtn color="secondary" class="px-8">Learn More</VBtn>
+            </VCardItem>
+          </VImg>
+        </VCard>
+      </VCol>
+      <VCol cols="4">
+        <VCard rounded="lg">
+          <VImg src="https://placehold.co/600x600" content-class="d-flex flex-column justify-space-between">
+            <VCardTitle>Flodyne Machine</VCardTitle>
+            <VCardItem>
+              <VBtn color="secondary" class="px-8">Learn More</VBtn>
+            </VCardItem>
+          </VImg>
+        </VCard>
+      </VCol>
+      <VCol cols="4">
+        <VCard rounded="lg">
+          <VImg src="https://placehold.co/600x600" content-class="d-flex flex-column justify-space-between">
+            <VCardTitle>Flodyne Machine</VCardTitle>
+            <VCardItem>
+              <VBtn color="secondary" class="px-8">Learn More</VBtn>
+            </VCardItem>
+          </VImg>
+        </VCard>
+      </VCol>
+    </VRow>
+    <VRow justify="center">
+      <VCol cols="auto">
+        <VBtn rounded="circle" variant="outlined" icon="mdi-chevron-left"></VBtn>
+      </VCol>
+      <VCol cols="auto">
+        <VBtn rounded="circle" variant="outlined" icon="mdi-chevron-right"></VBtn>
+      </VCol>
+    </VRow>
+  </FlodyneContainer>
+
+  <!-- Metrics -->
+  <FlodyneContainer>
+    <template #title><span class="text-primary">Metrics</span></template>
+    <template #subtitle>
+      Metrics are the backbone of performance evaluation and optimization. At Flodyne Business, we leverage a range of
+      key metrics to ensure that our solutions deliver tangible results and drive continuous improvement
+    </template>
+    <VImg max-width="400" cover class="mx-auto my-10" src="https://placehold.co/600x600"></VImg>
+  </FlodyneContainer>
+
+  <!-- Infra/Gallery -->
+  <FlodyneContainer color="primary">
+    <template #title>Infra/Gallery</template>
+    <VRow>
+      <VCol cols="5">
+        <VImg cover src="https://placehold.co/600x510" rounded="lg"></VImg>
+      </VCol>
+      <VCol cols="4">
+        <VRow>
+          <VCol cols="12">
+            <VImg cover src="https://placehold.co/600x300" rounded="lg"></VImg>
+          </VCol>
+          <VCol cols="12">
+            <VImg cover src="https://placehold.co/600x300" rounded="lg"></VImg>
+          </VCol>
+        </VRow>
+      </VCol>
+      <VCol cols="3">
+        <VRow>
+          <VCol cols="12">
+            <VImg cover src="https://placehold.co/600x550" rounded="lg"></VImg>
+          </VCol>
+          <VCol cols="12">
+            <VIcon icon="mdi-arrow-right" size="120"></VIcon>
+          </VCol>
+        </VRow>
+      </VCol>
+    </VRow>
+  </FlodyneContainer>
+  <!-- Your Advantages  -->
+
+  <FlodyneContainer>
+    <template #title> Your Advantages with <span class="text-secondary">Flodyne</span></template>
+    <template #subtitle>
+      Flodyne Business offers a multitude of advantages that set us apart in the field of fluid dynamics
+      solutions:
+    </template>
+
+    <VRow class="my-16 text-center">
+      <VCol cols="3">
+        <VBtn icon color="primary" size="120">
+          <VIcon icon="mdi-check" size="40"></VIcon>
+        </VBtn>
+        <h4 class="mt-8 mb-2 text-h6 font-weight-bold">Quality Manufacture</h4>
+        <div>Development and manufacturing in Germany</div>
+      </VCol>
+      <VCol cols="3">
+        <VBtn icon color="primary" size="120">
+          <VIcon icon="mdi-check" size="40"></VIcon>
+        </VBtn>
+        <h4 class="mt-8 mb-2 text-h6 font-weight-bold">Quality Manufacture</h4>
+        <div>Development and manufacturing in Germany</div>
+      </VCol>
+      <VCol cols="3">
+        <VBtn icon color="primary" size="120">
+          <VIcon icon="mdi-check" size="40"></VIcon>
+        </VBtn>
+        <h4 class="mt-8 mb-2 text-h6 font-weight-bold">Quality Manufacture</h4>
+        <div>Development and manufacturing in Germany</div>
+      </VCol>
+      <VCol cols="3">
+        <VBtn icon color="primary" size="120">
+          <VIcon icon="mdi-check" size="40"></VIcon>
+        </VBtn>
+        <h4 class="mt-8 mb-2 text-h6 font-weight-bold">Quality Manufacture</h4>
+        <div>Development and manufacturing in Germany</div>
+      </VCol>
+    </VRow>
+  </FlodyneContainer>
+
+  <!-- Testimonials -->
+  <FlodyneContainer>
+    <template #title>Testimo<span class="text-secondary">nials</span></template>
+    <template #subtitle>Here are our some clints see what they are saying about Flodyne</template>
+    <VRow>
+      <VCol cols="4">
+        <VSheet color="grey-lighten-4" class="pa-3" rounded="lg">
+          <VListItem class="px-0">
+            <template #prepend>
+              <VAvatar size="80">
+                <VImg src="https://placehold.co/80x80"></VImg>
+              </VAvatar>
+            </template>
+            <VListItemTitle class="font-weight-bold text-secondary">Ken Kieu</VListItemTitle>
+            <VListItemSubtitle class="text-secondary text-caption">CEO, Company</VListItemSubtitle>
+          </VListItem>
+          <v-rating :model-value=" 5 " active-color="yellow" size="x-small" class="ml-n2"></v-rating>
+          <div class="text-caption">
+            Working with Flodyne Business has been a game-changer for our company. Their expertise in fluid dynamics
+            helped
+            us optimize our manufacturing processes, resulting in significant cost savings and improved efficiency.
+            Their
+            team was professional, responsive, and dedicated to delivering results. I highly recommend Flodyne
+            Business
+            to
+            anyone looking to elevate their operations."
+          </div>
+        </VSheet>
+      </VCol>
+      <VCol cols="4">
+        <VSheet color="grey-lighten-4" class="pa-3" rounded="lg">
+          <VListItem class="px-0">
+            <template #prepend>
+              <VAvatar size="80">
+                <VImg src="https://placehold.co/80x80"></VImg>
+              </VAvatar>
+            </template>
+            <VListItemTitle class="font-weight-bold text-secondary">Ken Kieu</VListItemTitle>
+            <VListItemSubtitle class="text-secondary text-caption">CEO, Company</VListItemSubtitle>
+          </VListItem>
+          <v-rating :model-value=" 5 " active-color="yellow" size="x-small" class="ml-n2"></v-rating>
+          <div class="text-caption">
+            Working with Flodyne Business has been a game-changer for our company. Their expertise in fluid dynamics
+            helped
+            us optimize our manufacturing processes, resulting in significant cost savings and improved efficiency.
+            Their
+            team was professional, responsive, and dedicated to delivering results. I highly recommend Flodyne
+            Business
+            to
+            anyone looking to elevate their operations."
+          </div>
+        </VSheet>
+      </VCol>
+      <VCol cols="4">
+        <VSheet color="grey-lighten-4" class="pa-3" rounded="lg">
+          <VListItem class="px-0">
+            <template #prepend>
+              <VAvatar size="80">
+                <VImg src="https://placehold.co/80x80"></VImg>
+              </VAvatar>
+            </template>
+            <VListItemTitle class="font-weight-bold text-secondary">Ken Kieu</VListItemTitle>
+            <VListItemSubtitle class="text-secondary text-caption">CEO, Company</VListItemSubtitle>
+          </VListItem>
+          <v-rating :model-value=" 5 " active-color="yellow" size="x-small" class="ml-n2"></v-rating>
+          <div class="text-caption">
+            Working with Flodyne Business has been a game-changer for our company. Their expertise in fluid dynamics
+            helped
+            us optimize our manufacturing processes, resulting in significant cost savings and improved efficiency.
+            Their
+            team was professional, responsive, and dedicated to delivering results. I highly recommend Flodyne
+            Business
+            to
+            anyone looking to elevate their operations."
+          </div>
+        </VSheet>
+      </VCol>
+    </VRow>
+  </FlodyneContainer>
+</template>
+
+<script setup lang="ts">
+  definePageMeta( {
+    layout: 'home'
+  } )
+
+  const drawer = ref( false )
+  const links = ref( [
+    { title: 'About us', to: '/about' },
+    { title: 'Infrastructure', to: '/infrastructure' },
+    { title: 'Products', to: '/products' },
+    { title: 'Brick Making Machine', to: '/brick-making-machine' },
+    { title: 'Blogs', to: '/blogs' },
+    { title: 'Contact us', to: '/contact' },
+  ] )
+</script>
