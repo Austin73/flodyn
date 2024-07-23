@@ -2,21 +2,14 @@
 
   <!-- Banner -->
   <FlodyneContainer color="primary" padless>
-    <VToolbar color="transparent">
-      <template #prepend>
-        <VImg cover width="180" src="/images/logo.svg" alt="Flodyne Logo" />
-      </template>
-      <VSpacer />
-      <VBtn v-for="link in links" :key=" link.title " variant="text" to="/about">
-        {{ link.title }}
-      </VBtn>
-      <VSpacer />
-      <VBtn variant="elevated" color="secondary" rounded="pill" class="px-8">Contact Us</VBtn>
-    </VToolbar>
+    <VLayout height="64">
+      <FlodyneMenu />
+    </VLayout>
+
     <VRow align="center">
-      <VCol cols="6">
+      <VCol cols="12" md="6">
         <div>
-          <div class="text-h1">
+          <div class="text-h2">
             Welcome to <div class="text-secondary">Flodyne</div>
           </div>
           <div class="my-10">
@@ -29,7 +22,7 @@
           <VBtn size="large" rounded="pill" color="secondary"> Optimize your operation</VBtn>
         </div>
       </VCol>
-      <VCol cols="6">
+      <VCol cols="12" md="6">
         <VImg src="/images/home/home-hero.svg" alt="Flodyne Home Hero" />
       </VCol>
     </VRow>
@@ -37,30 +30,15 @@
   <!-- Client logos -->
   <FlodyneContainer padless>
     <VRow>
-      <VCol cols="2">
+      <VCol cols="4" md="2" v-for="i in 6" :key="i">
         <VImg max-width="120" src="/images/home/client-logo.svg"></VImg>
-      </VCol>
-      <VCol cols="2">
-        <VImg max-width="120" src="/images/home/client-logo.svg"></VImg>
-      </VCol>
-      <VCol cols="2">
-        <VImg max-width="120" src="/images/home/client-logo.svg"></VImg>
-      </VCol>
-      <VCol cols="2">
-        <VImg max-width="120" src="/images/home/client-logo.svg"></VImg>
-      </VCol>
-      <VCol cols="2">
-        <VImg max-width="120" src="/images/home/client-logo.svg"></VImg>
-      </VCol>
-      <VCol cols="2">
-        <VImg max-width="120" src="/images/home/client-logo.svg"></VImg>
-      </VCol>
+      </VCol>   
     </VRow>
   </FlodyneContainer>
   <!-- What we do -->
   <FlodyneContainer padless>
     <VRow>
-      <VCol cols="6">
+      <VCol cols="12" md="6">
         <h3 class="text-h3 text-primary">
           What we do
         </h3>
@@ -90,7 +68,7 @@
         </div>
 
       </VCol>
-      <VCol cols="6">
+      <VCol cols="12" md="6">
         <VRow>
           <VCol cols="6">
             <VCard>
@@ -181,10 +159,10 @@
   <FlodyneContainer color="primary">
     <template #title>Infra/Gallery</template>
     <VRow>
-      <VCol cols="5">
+      <VCol cols="12" md="5">
         <VImg cover src="https://picsum.photos/id/12/600/510" rounded="lg"></VImg>
       </VCol>
-      <VCol cols="4">
+      <VCol cols="12" md="4">
         <VRow>
           <VCol cols="12">
             <VImg cover src="https://picsum.photos/600/300" rounded="lg"></VImg>
@@ -194,7 +172,7 @@
           </VCol>
         </VRow>
       </VCol>
-      <VCol cols="3">
+      <VCol cols="12" md="3">
         <VRow>
           <VCol cols="12">
             <VImg cover src="https://picsum.photos/600/550" rounded="lg"></VImg>
@@ -216,28 +194,28 @@
     </template>
 
     <VRow class="my-16 text-center">
-      <VCol cols="3">
+      <VCol cols="6" md="3">
         <VBtn icon color="primary" size="120">
           <VIcon icon="mdi-check" size="40"></VIcon>
         </VBtn>
         <h4 class="mt-8 mb-2 text-h6 font-weight-bold">Quality Manufacture</h4>
         <div>Development and manufacturing in Germany</div>
       </VCol>
-      <VCol cols="3">
+      <VCol cols="6" md="3">
         <VBtn icon color="primary" size="120">
           <VIcon icon="mdi-check" size="40"></VIcon>
         </VBtn>
         <h4 class="mt-8 mb-2 text-h6 font-weight-bold">Quality Manufacture</h4>
         <div>Development and manufacturing in Germany</div>
       </VCol>
-      <VCol cols="3">
+      <VCol cols="6" md="3">
         <VBtn icon color="primary" size="120">
           <VIcon icon="mdi-check" size="40"></VIcon>
         </VBtn>
         <h4 class="mt-8 mb-2 text-h6 font-weight-bold">Quality Manufacture</h4>
         <div>Development and manufacturing in Germany</div>
       </VCol>
-      <VCol cols="3">
+      <VCol cols="6" md="3">
         <VBtn icon color="primary" size="120">
           <VIcon icon="mdi-check" size="40"></VIcon>
         </VBtn>
@@ -252,7 +230,7 @@
     <template #title>Testimo<span class="text-secondary">nials</span></template>
     <template #subtitle>Here are our some clints see what they are saying about Flodyne</template>
     <VRow>
-      <VCol cols="4">
+      <VCol cols="12" md="4">
         <VSheet color="grey-lighten-4" class="pa-3" rounded="lg">
           <VListItem class="px-0">
             <template #prepend>
@@ -276,7 +254,7 @@
           </div>
         </VSheet>
       </VCol>
-      <VCol cols="4">
+      <VCol cols="12" md="4">
         <VSheet color="grey-lighten-4" class="pa-3" rounded="lg">
           <VListItem class="px-0">
             <template #prepend>
@@ -300,7 +278,7 @@
           </div>
         </VSheet>
       </VCol>
-      <VCol cols="4">
+      <VCol cols="12" md="4">
         <VSheet color="grey-lighten-4" class="pa-3" rounded="lg">
           <VListItem class="px-0">
             <template #prepend>

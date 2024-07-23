@@ -5,14 +5,14 @@
         <VRow>
           <VCol cols="12" md="3">
 
-            <VImg width="150" src="/images/logo.svg" alt="Flodyne Logo"  />
+            <VImg width="150" src="/images/logo.svg" alt="Flodyne Logo" />
 
             <p class="mt-2">
               Flodyne Business is a pioneering leader in the realm of fluid dynamics solutions, dedicated to
               revolutionizing the way industries manage and optimize fluid flow, heat transfer, and related processes.
             </p>
             <div class="mt-10">
-              <VBtn v-for=" icon in icons " :key=" icon " icon theme="light" class="mr-2">
+              <VBtn v-for="  icon in icons  " :key=" icon " icon theme="light" class="mr-2">
                 <VIcon color="secondary">{{ icon }}</VIcon>
               </VBtn>
             </div>
@@ -22,7 +22,8 @@
             <h4 class="text-h6">Useful Link</h4>
 
             <VList bg-color="transparent" nav density="compact" class="px-0">
-              <VListItem v-for="  link in links  " :key=" link.title " to="link.to" :title=" link.title " class="px-0" />
+              <VListItem v-for="   link in links   " :key=" link.title " :to=" link.to " :title=" link.title "
+                class="px-0" />
             </VList>
 
           </VCol>
@@ -30,15 +31,15 @@
           <VCol cols="12" md="3" class="text-left">
             <h4 class=" text-h6">Contact us</h4>
             <VList bg-color="transparent" nav density="compact" class="px-0">
-              <VListItem to="tel:+91123456789" title="Call: +91 123456789" class="px-0" />
-              <VListItem to="tel:+91 123456789" title="WhatsApp: +91 123456789" class="px-0" />
+              <VListItem href="tel:+91123456789" title="Call: +91 123456789" class="px-0" />
+              <VListItem href="tel:+91 123456789" title="WhatsApp: +91 123456789" class="px-0" />
             </VList>
           </VCol>
 
           <VCol cols="12" md="3" class="text-left">
             <h4 class=" text-h6">Address</h4>
             <VList bg-color="transparent" nav density="compact" class="px-0">
-              <VListItem to="https://maps.app.goo.gl/Vtza3eFENx5rLc3t6" title="Noida sector 2" class="px-0" />
+              <VListItem href="https://maps.app.goo.gl/Vtza3eFENx5rLc3t6" title="Noida sector 2" class="px-0" />
             </VList>
           </VCol>
         </VRow>

@@ -1,7 +1,10 @@
 <template>
-  <VCard flat rounded="0" min-height="500px" height="40vh"   image="https://cdn.vuetifyjs.com/docs/images/cards/dark-beach.jpg" theme="dark">
+  <FlodyneMenu />
+
+  <VCard flat rounded="0" min-height="500px" height="40vh"
+    image="https://cdn.vuetifyjs.com/docs/images/cards/dark-beach.jpg" theme="dark">
     <VRow align="center" justify="center" class="fill-height">
-      <h1 class="text-h1 text-capitalize">Page Title</h1>
+      <h1 class="text-capitalize" :class="$vuetify.display.mdAndUp ? 'text-h1' : 'text-h3'">Page Title</h1>
     </VRow>
   </VCard>
 </template>

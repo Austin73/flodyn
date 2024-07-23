@@ -6,8 +6,8 @@
     <VRow>
       <VCol cols="6">
         <VRow justify="end" align="center">
-          <VCol class="text-right text-h1 text-secondary font-weight-bold">99%</VCol>
-          <VCol cols="auto" class="text-h4">
+          <VCol class="text-secondary font-weight-bold" :class="$vuetify.display.mdAndUp ? 'text-h1 text-right' : 'text-h2 text-center'">99%</VCol>
+          <VCol cols="auto" class="text-h4" >
             <div>Positive</div>
             <div>Feedback</div>
           </VCol>
@@ -16,7 +16,7 @@
       <VDivider vertical />
       <VCol cols="6">
         <VRow align="center">
-          <VCol cols="auto" class=" text-h1 text-secondary font-weight-bold">10K</VCol>
+          <VCol cols="auto" class="text-secondary font-weight-bold" :class="$vuetify.display.mdAndUp ? 'text-h1 text-right' : 'text-h2 text-center'">10K</VCol>
           <VCol class="text-h4">
             <div>Project</div>
             <div>Complete</div>
@@ -28,8 +28,8 @@
 
   <FlodyneContainer color="primary">
     <VRow align="center">
-      <VCol cols="7">
-        <h3 class="text-h3 font-weight-bold">
+      <VCol cols="12" md="7">
+        <h3 class="font-weight-bold" :class="$vuetify.display.mdAndUp ? 'text-h3' : 'text-h4'">
           Discover Flodyne Business: <br />
           Your Partner in <span class="text-secondary">Driving Success</span>
         </h3>
@@ -40,20 +40,20 @@
         </div>
         <VBtn color="secondary" rounded="pill" class="px-10">Contact Us</VBtn>
       </VCol>
-      <VCol cols="1"/>
-      <VCol cols="4">
+      <VCol cols="12" md="1"/>
+      <VCol cols="12" md="4">
         <VImg rounded="xl" cover src="https://picsum.photos/400/500" alt="About Us" />
       </VCol>
     </VRow>
   </FlodyneContainer>
   <FlodyneContainer >
     <VRow align="center">
-      <VCol cols="5">
+      <VCol cols="12" md="5">
         <VImg rounded="xl" cover src="https://picsum.photos/500/500" alt="About Us" />
       </VCol>
-      <VCol cols="1"/>
-      <VCol cols="5">
-        <h3 class="text-h3 font-weight-bold">
+      <VCol cols="12" md="1"/>
+      <VCol cols="12" md="5">
+        <h3 class="font-weight-bold" :class="$vuetify.display.mdAndUp ? 'text-h3' : 'text-h4'">
           <span class="text-primary">Our</span>  <span class="text-secondary">Mission</span>
         </h3>
         <div class="my-16">
@@ -67,8 +67,8 @@
   <FlodyneContainer >
     <VRow align="center">
     
-      <VCol cols="5">
-        <h3 class="text-h3 font-weight-bold">
+      <VCol cols="12" md="5">
+        <h3 class="font-weight-bold" :class="$vuetify.display.mdAndUp ? 'text-h3' : 'text-h4'">
           <span class="text-primary">Why Choose</span>  <span class="text-secondary">Flodyne Business?</span>
         </h3>
         <div class="my-8">
@@ -81,8 +81,8 @@
         </div>
         <VBtn color="secondary" rounded="pill" class="px-10">Learn more</VBtn>
       </VCol>      
-      <VCol cols="1"/>
-      <VCol cols="5">
+      <VCol cols="12" md="1"/>
+      <VCol cols="12" md="5">
         <VImg rounded="xl" cover src="https://picsum.photos/500/500" alt="About Us" />
       </VCol>
     </VRow>

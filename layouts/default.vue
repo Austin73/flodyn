@@ -1,5 +1,5 @@
-<template>
-  <FlodyneNavigation/>
+<template>  
+  <FlodyneNavigationDrawer/>
   <FlodyneHeader />
   <NuxtPage />
   <FlodyneFooter />

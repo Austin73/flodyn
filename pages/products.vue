@@ -6,7 +6,7 @@
     <v-window v-model=" onboarding ">
       <v-window-item v-for="       n in length       " :key=" `card-${ n }` " :value=" n ">
         <VRow>
-          <VCol cols="4">
+          <VCol cols="12" md="4">
             <VCard rounded="lg" to="/">
               <VImg :aspect-ratio=" 16 / 9 " cover src="https://picsum.photos/400/300" alt="Card Image" />
               <VCardTitle class="text-secondary">Aerospace</VCardTitle>
@@ -19,7 +19,7 @@
               </VCardText>
             </VCard>
           </VCol>
-          <VCol cols="4">
+          <VCol cols="12" md="4">
             <VCard rounded="lg" to="/">
               <VImg :aspect-ratio=" 16 / 9 " cover src="https://picsum.photos/400/300" alt="Card Image" />
               <VCardTitle class="text-secondary">Aerospace</VCardTitle>
@@ -32,7 +32,7 @@
               </VCardText>
             </VCard>
           </VCol>
-          <VCol cols="4">
+          <VCol cols="12" md="4">
             <VCard rounded="lg" to="/">
               <VImg :aspect-ratio=" 16 / 9 " cover src="https://picsum.photos/400/300" alt="Card Image" />
               <VCardTitle class="text-secondary">Aerospace</VCardTitle>
@@ -64,7 +64,7 @@
     <template #subtitle>We are working in lost of product category</template>
 
     <VRow>
-      <VCol cols="4">
+      <VCol cols="12" md="4">
         <VListSubheader class="text-primary font-weight-bold">Our Categories</VListSubheader>
         <VListItem v-for="  i in 10  " :key=" i " title="Straight Series" class="bg-green-lighten-5 pr-0 py-0 mb-2 ">
           <template #append>
@@ -74,54 +74,9 @@
           </template>
         </VListItem>
       </VCol>
-      <VCol cols="8">
+      <VCol cols="12" md="8">
         <VRow>
-          <VCol cols="4">
-            <VCard to="/" class="mb-4 text-center">
-              <VImg :aspect-ratio=" 4 / 3 " cover src="https://picsum.photos/400/300" alt="Card Image" />
-              <VCardTitle class="text-body-1">Flo dyne Machine</VCardTitle>
-              <VCardActions class="justify-center">
-                <VBtn color="primary" variant="flat" class="px-5">Read More</VBtn>
-              </VCardActions>
-            </VCard>
-          </VCol>
-          <VCol cols="4">
-            <VCard to="/" class="mb-4 text-center">
-              <VImg :aspect-ratio=" 4 / 3 " cover src="https://picsum.photos/400/300" alt="Card Image" />
-              <VCardTitle class="text-body-1">Flo dyne Machine</VCardTitle>
-              <VCardActions class="justify-center">
-                <VBtn color="primary" variant="flat" class="px-5">Read More</VBtn>
-              </VCardActions>
-            </VCard>
-          </VCol>
-          <VCol cols="4">
-            <VCard to="/" class="mb-4 text-center">
-              <VImg :aspect-ratio=" 4 / 3 " cover src="https://picsum.photos/400/300" alt="Card Image" />
-              <VCardTitle class="text-body-1">Flo dyne Machine</VCardTitle>
-              <VCardActions class="justify-center">
-                <VBtn color="primary" variant="flat" class="px-5">Read More</VBtn>
-              </VCardActions>
-            </VCard>
-          </VCol>
-          <VCol cols="4">
-            <VCard to="/" class="mb-4 text-center">
-              <VImg :aspect-ratio=" 4 / 3 " cover src="https://picsum.photos/400/300" alt="Card Image" />
-              <VCardTitle class="text-body-1">Flo dyne Machine</VCardTitle>
-              <VCardActions class="justify-center">
-                <VBtn color="primary" variant="flat" class="px-5">Read More</VBtn>
-              </VCardActions>
-            </VCard>
-          </VCol>
-          <VCol cols="4">
-            <VCard to="/" class="mb-4 text-center">
-              <VImg :aspect-ratio=" 4 / 3 " cover src="https://picsum.photos/400/300" alt="Card Image" />
-              <VCardTitle class="text-body-1">Flo dyne Machine</VCardTitle>
-              <VCardActions class="justify-center">
-                <VBtn color="primary" variant="flat" class="px-5">Read More</VBtn>
-              </VCardActions>
-            </VCard>
-          </VCol>
-          <VCol cols="4">
+          <VCol cols="12" md="4" v-for="i in 6" :key="i">
             <VCard to="/" class="mb-4 text-center">
               <VImg :aspect-ratio=" 4 / 3 " cover src="https://picsum.photos/400/300" alt="Card Image" />
               <VCardTitle class="text-body-1">Flo dyne Machine</VCardTitle>

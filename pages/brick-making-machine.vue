@@ -4,11 +4,11 @@
     <template #subtitle>Designing Innovative Experiences With Our Skills In Design And Development</template>
 
     <VRow>
-      <VCol cols="4">
+      <VCol cols="12" md="4">
         <VImg  src="https://picsum.photos/400/400" alt="Card Image"  rounded="lg"/>
 
       </VCol>
-      <VCol cols="8">
+      <VCol cols="12" md="8">
         <p>Flowdynepumps started manufacturing Canned Motor pumps in the year 2012. </p>
         <p>With time the facilities were increased to manufacture more quantity of 0.75 to 75 kw Canned Motor Pumps.</p>
         <p>Flowdyne pumps manufacturers a number of components in house and also procures from dedicated suppliers.</p>

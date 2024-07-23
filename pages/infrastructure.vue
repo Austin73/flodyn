@@ -5,10 +5,10 @@
     <template #subtitle>Designing Innovative Experiences With Our Skills In Design And Development</template>
 
     <VRow justify="center">
-      <VCol cols="4">
+      <VCol cols="12" md="4">
         <VImg cover src="https://picsum.photos/400/400" rounded="lg" />
       </VCol>
-      <VCol cols="8">
+      <VCol cols="12" md="8">
         <p>Flowdynepumps started manufacturing Canned Motor pumps in the year 2012. With time the facilities were
           increased
           to manufacture more quantity of 0.75 to 75 kw Canned Motor Pumps.</p>
@@ -32,8 +32,8 @@
 
   <FlodyneContainer color="primary">
     <VRow justify="center">
-      <VCol cols="8">
-        <h3 class="text-h3 font-weight-bold mb-8">
+      <VCol cols="12" md="8">
+        <h3 class="font-weight-bold mb-8" :class="$vuetify.display.mdAndUp ? 'text-h3' : 'text-h4'">
           Design & <span class="text-secondary">Development</span>
         </h3>
         <ul class="ml-5">
@@ -45,7 +45,7 @@
           <li>The packing is made carefully so as to protect the product and guarantee its perfect condition at delivery.</li>
         </ul>
       </VCol>
-      <VCol cols="4">
+      <VCol cols="12" md="4">
         <VImg cover src="https://picsum.photos/400/400" rounded="lg" />
       </VCol>
     </VRow>
@@ -53,8 +53,8 @@
 
   <FlodyneContainer>
     <VRow >
-      <VCol cols="8">
-        <h3 class="text-h3 font-weight-bold mb-8">
+      <VCol cols="12" md="8">
+        <h3 class="font-weight-bold mb-8" :class="$vuetify.display.mdAndUp ? 'text-h3' : 'text-h4'">
           Testing <span class="text-secondary">Facilities</span>
         </h3>
         <p>The objective of this page is to lay down a standard procedure for performance tests of Canned Motor Centrifugal Pumps at our test facility.</p>
@@ -68,7 +68,7 @@
           <li>Meter drives up to 200kw can be used for testing. <NuxtLink class="font-weight-bold text-primary text-decoration-none" to="/">READ MORE</NuxtLink></li>
         </ul>
       </VCol>
-      <VCol cols="4">
+      <VCol cols="12" md="4">
         <VImg cover src="https://picsum.photos/400/400" rounded="lg" />
       </VCol>
     </VRow>
