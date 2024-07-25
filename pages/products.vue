@@ -2,9 +2,10 @@
   <FlodyneContainer color="primary">
     <template #title>Our <span class="text-secondary">Categories</span></template>
     <template #subtitle>At Flodyne Business, we specialize in leveraging cutting-edge technologies and expertise to
-      optimize fluid dynamics across various industries. Our comprehensive suite of services includes:</template>
+      optimize fluid dynamics across various industries. Our comprehensive suite of services includes:
+    </template>
     <v-window v-model=" onboarding ">
-      <v-window-item v-for="       n in length       " :key=" `card-${ n }` " :value=" n ">
+      <v-window-item v-for="n in length" :key=" `card-${ n }` " :value=" n ">
         <VRow>
           <VCol cols="12" md="4">
             <VCard rounded="lg" to="/">
@@ -51,7 +52,7 @@
     <VRow justify="space-between" class="mt-16">
       <v-btn icon="mdi-chevron-left" variant="plain" @click=" prev "></v-btn>
       <v-item-group v-model=" onboarding " class="text-center" mandatory>
-        <v-item v-for="    n in length    " :key=" `btn-${ n }` " v-slot=" { isSelected, toggle } " :value=" n ">
+        <v-item v-for="      n in length      " :key=" `btn-${ n }` " v-slot=" { isSelected, toggle } " :value=" n ">
           <v-btn :variant=" isSelected ? 'outlined' : 'text' " icon="mdi-record" @click=" toggle "></v-btn>
         </v-item>
       </v-item-group>
@@ -66,7 +67,7 @@
     <VRow>
       <VCol cols="12" md="4">
         <VListSubheader class="text-primary font-weight-bold">Our Categories</VListSubheader>
-        <VListItem v-for="  i in 10  " :key=" i " title="Straight Series" class="bg-green-lighten-5 pr-0 py-0 mb-2 ">
+        <VListItem v-for="    i in 10    " :key=" i " title="Straight Series" class="bg-green-lighten-5 pr-0 py-0 mb-2 ">
           <template #append>
             <VBtn color="secondary" variant="flat" width="60">
               <VIcon>mdi-arrow-right</VIcon>
@@ -76,7 +77,7 @@
       </VCol>
       <VCol cols="12" md="8">
         <VRow>
-          <VCol cols="12" md="4" v-for="i in 6" :key="i">
+          <VCol cols="12" md="4" v-for="  i in 6  " :key=" i ">
             <VCard to="/" class="mb-4 text-center">
               <VImg :aspect-ratio=" 4 / 3 " cover src="https://picsum.photos/400/300" alt="Card Image" />
               <VCardTitle class="text-body-1">Flo dyne Machine</VCardTitle>

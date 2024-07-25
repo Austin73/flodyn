@@ -1,0 +1,6 @@
+@use './fonts';
+
+@forward 'vuetify' with (
+  $body-font-family: "Inter",
+  $heading-font-family: "Lato",
+);

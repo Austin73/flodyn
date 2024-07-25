@@ -6,18 +6,21 @@ export default defineNuxtConfig( {
   modules: [
     'vuetify-nuxt-module'
   ],
+  features: {
+    inlineStyles: false
+  },
+  css: ['assets/styles/main.scss'],
   vuetify: {
-    moduleOptions: {
-      /* module specific options */
+    moduleOptions: {      
     },
     vuetifyOptions: {
-      defaults:{
+      defaults: {
         VBtn: {
           class: 'text-none'
         },
-        VSheet:{
-          color: 'transparent',          
-        }        
+        VSheet: {
+          color: 'transparent',
+        }
       },
       theme: {
         themes: {
@@ -28,7 +31,7 @@ export default defineNuxtConfig( {
               secondary: '#2ABC68',
             }
           },
-          dark:{
+          dark: {
             dark: true,
             colors: {
               primary: '#1F299C',
@@ -38,5 +41,5 @@ export default defineNuxtConfig( {
         }
       }
     }
-  }
+  },
 } )

@@ -30,9 +30,9 @@
   <!-- Client logos -->
   <FlodyneContainer padless>
     <VRow>
-      <VCol cols="4" md="2" v-for="i in 6" :key="i">
+      <VCol cols="4" md="2" v-for=" i in 6 " :key=" i ">
         <VImg max-width="120" src="/images/home/client-logo.svg"></VImg>
-      </VCol>   
+      </VCol>
     </VRow>
   </FlodyneContainer>
   <!-- What we do -->
@@ -229,80 +229,94 @@
   <FlodyneContainer>
     <template #title>Testimo<span class="text-secondary">nials</span></template>
     <template #subtitle>Here are our some clints see what they are saying about Flodyne</template>
-    <VRow>
-      <VCol cols="12" md="4">
-        <VSheet color="grey-lighten-4" class="pa-3" rounded="lg">
-          <VListItem class="px-0">
-            <template #prepend>
-              <VAvatar size="80">
-                <VImg src="https://picsum.photos/80/80"></VImg>
-              </VAvatar>
-            </template>
-            <VListItemTitle class="font-weight-bold text-secondary">Ken Kieu</VListItemTitle>
-            <VListItemSubtitle class="text-secondary text-caption">CEO, Company</VListItemSubtitle>
-          </VListItem>
-          <v-rating :model-value=" 5 " active-color="yellow" size="x-small" class="ml-n2"></v-rating>
-          <div class="text-caption">
-            Working with Flodyne Business has been a game-changer for our company. Their expertise in fluid dynamics
-            helped
-            us optimize our manufacturing processes, resulting in significant cost savings and improved efficiency.
-            Their
-            team was professional, responsive, and dedicated to delivering results. I highly recommend Flodyne
-            Business
-            to
-            anyone looking to elevate their operations."
-          </div>
-        </VSheet>
-      </VCol>
-      <VCol cols="12" md="4">
-        <VSheet color="grey-lighten-4" class="pa-3" rounded="lg">
-          <VListItem class="px-0">
-            <template #prepend>
-              <VAvatar size="80">
-                <VImg src="https://picsum.photos/80/80"></VImg>
-              </VAvatar>
-            </template>
-            <VListItemTitle class="font-weight-bold text-secondary">Ken Kieu</VListItemTitle>
-            <VListItemSubtitle class="text-secondary text-caption">CEO, Company</VListItemSubtitle>
-          </VListItem>
-          <v-rating :model-value=" 5 " active-color="yellow" size="x-small" class="ml-n2"></v-rating>
-          <div class="text-caption">
-            Working with Flodyne Business has been a game-changer for our company. Their expertise in fluid dynamics
-            helped
-            us optimize our manufacturing processes, resulting in significant cost savings and improved efficiency.
-            Their
-            team was professional, responsive, and dedicated to delivering results. I highly recommend Flodyne
-            Business
-            to
-            anyone looking to elevate their operations."
-          </div>
-        </VSheet>
-      </VCol>
-      <VCol cols="12" md="4">
-        <VSheet color="grey-lighten-4" class="pa-3" rounded="lg">
-          <VListItem class="px-0">
-            <template #prepend>
-              <VAvatar size="80">
-                <VImg src="https://picsum.photos/80/80"></VImg>
-              </VAvatar>
-            </template>
-            <VListItemTitle class="font-weight-bold text-secondary">Ken Kieu</VListItemTitle>
-            <VListItemSubtitle class="text-secondary text-caption">CEO, Company</VListItemSubtitle>
-          </VListItem>
-          <v-rating :model-value=" 5 " active-color="yellow" size="x-small" class="ml-n2"></v-rating>
-          <div class="text-caption">
-            Working with Flodyne Business has been a game-changer for our company. Their expertise in fluid dynamics
-            helped
-            us optimize our manufacturing processes, resulting in significant cost savings and improved efficiency.
-            Their
-            team was professional, responsive, and dedicated to delivering results. I highly recommend Flodyne
-            Business
-            to
-            anyone looking to elevate their operations."
-          </div>
-        </VSheet>
-      </VCol>
+    <v-window v-model=" onboarding ">
+      <v-window-item v-for=" n in length " :key=" `card-${ n }` " :value=" n ">
+        <VRow>
+          <VCol cols="12" md="4">
+            <VSheet color="grey-lighten-4" class="pa-3" rounded="lg">
+              <VListItem class="px-0">
+                <template #prepend>
+                  <VAvatar size="80">
+                    <VImg src="https://picsum.photos/80/80"></VImg>
+                  </VAvatar>
+                </template>
+                <VListItemTitle class="font-weight-bold text-secondary">Ken Kieu</VListItemTitle>
+                <VListItemSubtitle class="text-secondary text-caption">CEO, Company</VListItemSubtitle>
+              </VListItem>
+              <v-rating :model-value=" 5 " active-color="yellow" size="x-small" class="ml-n2"></v-rating>
+              <div class="text-caption">
+                Working with Flodyne Business has been a game-changer for our company. Their expertise in fluid dynamics
+                helped
+                us optimize our manufacturing processes, resulting in significant cost savings and improved efficiency.
+                Their
+                team was professional, responsive, and dedicated to delivering results. I highly recommend Flodyne
+                Business
+                to
+                anyone looking to elevate their operations."
+              </div>
+            </VSheet>
+          </VCol>
+          <VCol cols="12" md="4">
+            <VSheet color="grey-lighten-4" class="pa-3" rounded="lg">
+              <VListItem class="px-0">
+                <template #prepend>
+                  <VAvatar size="80">
+                    <VImg src="https://picsum.photos/80/80"></VImg>
+                  </VAvatar>
+                </template>
+                <VListItemTitle class="font-weight-bold text-secondary">Ken Kieu</VListItemTitle>
+                <VListItemSubtitle class="text-secondary text-caption">CEO, Company</VListItemSubtitle>
+              </VListItem>
+              <v-rating :model-value=" 5 " active-color="yellow" size="x-small" class="ml-n2"></v-rating>
+              <div class="text-caption">
+                Working with Flodyne Business has been a game-changer for our company. Their expertise in fluid dynamics
+                helped
+                us optimize our manufacturing processes, resulting in significant cost savings and improved efficiency.
+                Their
+                team was professional, responsive, and dedicated to delivering results. I highly recommend Flodyne
+                Business
+                to
+                anyone looking to elevate their operations."
+              </div>
+            </VSheet>
+          </VCol>
+          <VCol cols="12" md="4">
+            <VSheet color="grey-lighten-4" class="pa-3" rounded="lg">
+              <VListItem class="px-0">
+                <template #prepend>
+                  <VAvatar size="80">
+                    <VImg src="https://picsum.photos/80/80"></VImg>
+                  </VAvatar>
+                </template>
+                <VListItemTitle class="font-weight-bold text-secondary">Ken Kieu</VListItemTitle>
+                <VListItemSubtitle class="text-secondary text-caption">CEO, Company</VListItemSubtitle>
+              </VListItem>
+              <v-rating :model-value=" 5 " active-color="yellow" size="x-small" class="ml-n2"></v-rating>
+              <div class="text-caption">
+                Working with Flodyne Business has been a game-changer for our company. Their expertise in fluid dynamics
+                helped
+                us optimize our manufacturing processes, resulting in significant cost savings and improved efficiency.
+                Their
+                team was professional, responsive, and dedicated to delivering results. I highly recommend Flodyne
+                Business
+                to
+                anyone looking to elevate their operations."
+              </div>
+            </VSheet>
+          </VCol>
+        </VRow>
+      </v-window-item>
+    </v-window>
+    <VRow justify="space-between" class="mt-16">
+      <v-btn icon="mdi-chevron-left" variant="plain" @click=" prev "></v-btn>
+      <v-item-group v-model=" onboarding " class="text-center" mandatory>
+        <v-item v-for="       n in length       " :key=" `btn-${ n }` " v-slot=" { isSelected, toggle } " :value=" n ">
+          <v-btn :variant=" isSelected ? 'outlined' : 'text' " icon="mdi-record" @click=" toggle "></v-btn>
+        </v-item>
+      </v-item-group>
+      <v-btn icon="mdi-chevron-right" variant="plain" @click=" next "></v-btn>
     </VRow>
+
   </FlodyneContainer>
 </template>
 
@@ -320,4 +334,15 @@
     { title: 'Blogs', to: '/blogs' },
     { title: 'Contact us', to: '/contact' },
   ] )
+
+  const length = ref( 3 )
+  const onboarding = ref( 1 )
+
+  function next() {
+    onboarding.value = onboarding.value + 1 > length.value ? 1 : onboarding.value + 1
+  }
+  function prev() {
+    onboarding.value = onboarding.value - 1 <= 0 ? length.value : onboarding.value - 1
+  }
+
 </script>
