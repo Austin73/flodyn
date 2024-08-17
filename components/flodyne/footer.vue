@@ -12,7 +12,7 @@
               revolutionizing the way industries manage and optimize fluid flow, heat transfer, and related processes.
             </p>
             <div class="mt-10">
-              <VBtn v-for="  icon in icons  " :key=" icon " icon theme="light" class="mr-2">
+              <VBtn v-for="  icon in icons  " :key="icon" icon theme="light" class="mr-2">
                 <VIcon color="secondary">{{ icon }}</VIcon>
               </VBtn>
             </div>
@@ -22,8 +22,7 @@
             <h4 class="text-h6">Useful Link</h4>
 
             <VList bg-color="transparent" nav density="compact" class="px-0">
-              <VListItem v-for="   link in links   " :key=" link.title " :to=" link.to " :title=" link.title "
-                class="px-0" />
+              <VListItem v-for="link in links" :key="link.title" :to="link.to" :title="link.title" class="px-0" />
             </VList>
 
           </VCol>
@@ -57,15 +56,15 @@
 
   export default {
     setup() {
-      const icons = ref( ['mdi-instagram', 'mdi-whatsapp', 'mdi-youtube', 'mdi-facebook'] )
-      const links = ref( [
+      const icons = ref(['mdi-instagram', 'mdi-whatsapp', 'mdi-youtube', 'mdi-facebook'])
+      const links = ref([
         { title: 'About us', to: '/about' },
         { title: 'Infrastructure', to: '/infrastructure' },
         { title: 'Products', to: '/products' },
         { title: 'Brick Making Machine', to: '/brick-making-machine' },
         { title: 'Blogs', to: '/blogs' },
         { title: 'Contact us', to: '/contact' },
-      ] )
+      ])
 
       return { icons, links }
     },

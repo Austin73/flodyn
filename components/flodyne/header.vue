@@ -14,15 +14,15 @@
 
   export default {
     setup() {
-      const drawer = ref( false )
-      const links = ref( [
+      const drawer = ref(false)
+      const links = ref([
         { title: 'About us', to: '/about' },
         { title: 'Infrastructure', to: '/infrastructure' },
         { title: 'Products', to: '/products' },
         { title: 'Brick Making Machine', to: '/brick-making-machine' },
         { title: 'Blogs', to: '/blogs' },
         { title: 'Contact us', to: '/contact' },
-      ] )
+      ])
 
       return { drawer, links }
     },

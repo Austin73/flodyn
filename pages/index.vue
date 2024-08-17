@@ -30,7 +30,7 @@
   <!-- Client logos -->
   <FlodyneContainer padless>
     <VRow>
-      <VCol cols="4" md="2" v-for=" i in 6 " :key=" i ">
+      <VCol cols="4" md="2" v-for=" i in 6 " :key="i">
         <VImg max-width="120" src="/images/home/client-logo.svg"></VImg>
       </VCol>
     </VRow>
@@ -229,8 +229,8 @@
   <FlodyneContainer>
     <template #title>Testimo<span class="text-secondary">nials</span></template>
     <template #subtitle>Here are our some clints see what they are saying about Flodyne</template>
-    <v-window v-model=" onboarding ">
-      <v-window-item v-for=" n in length " :key=" `card-${ n }` " :value=" n ">
+    <v-window v-model="onboarding">
+      <v-window-item v-for=" n in length " :key="`card-${n}`" :value="n">
         <VRow>
           <VCol cols="12" md="4">
             <VSheet color="grey-lighten-4" class="pa-3" rounded="lg">
@@ -243,7 +243,7 @@
                 <VListItemTitle class="font-weight-bold text-secondary">Ken Kieu</VListItemTitle>
                 <VListItemSubtitle class="text-secondary text-caption">CEO, Company</VListItemSubtitle>
               </VListItem>
-              <v-rating :model-value=" 5 " active-color="yellow" size="x-small" class="ml-n2"></v-rating>
+              <v-rating :model-value="5" active-color="yellow" size="x-small" class="ml-n2"></v-rating>
               <div class="text-caption">
                 Working with Flodyne Business has been a game-changer for our company. Their expertise in fluid dynamics
                 helped
@@ -267,7 +267,7 @@
                 <VListItemTitle class="font-weight-bold text-secondary">Ken Kieu</VListItemTitle>
                 <VListItemSubtitle class="text-secondary text-caption">CEO, Company</VListItemSubtitle>
               </VListItem>
-              <v-rating :model-value=" 5 " active-color="yellow" size="x-small" class="ml-n2"></v-rating>
+              <v-rating :model-value="5" active-color="yellow" size="x-small" class="ml-n2"></v-rating>
               <div class="text-caption">
                 Working with Flodyne Business has been a game-changer for our company. Their expertise in fluid dynamics
                 helped
@@ -291,7 +291,7 @@
                 <VListItemTitle class="font-weight-bold text-secondary">Ken Kieu</VListItemTitle>
                 <VListItemSubtitle class="text-secondary text-caption">CEO, Company</VListItemSubtitle>
               </VListItem>
-              <v-rating :model-value=" 5 " active-color="yellow" size="x-small" class="ml-n2"></v-rating>
+              <v-rating :model-value="5" active-color="yellow" size="x-small" class="ml-n2"></v-rating>
               <div class="text-caption">
                 Working with Flodyne Business has been a game-changer for our company. Their expertise in fluid dynamics
                 helped
@@ -308,35 +308,35 @@
       </v-window-item>
     </v-window>
     <VRow justify="space-between" class="mt-16">
-      <v-btn icon="mdi-chevron-left" variant="plain" @click=" prev "></v-btn>
-      <v-item-group v-model=" onboarding " class="text-center" mandatory>
-        <v-item v-for="       n in length       " :key=" `btn-${ n }` " v-slot=" { isSelected, toggle } " :value=" n ">
-          <v-btn :variant=" isSelected ? 'outlined' : 'text' " icon="mdi-record" @click=" toggle "></v-btn>
+      <v-btn icon="mdi-chevron-left" variant="plain" @click="prev"></v-btn>
+      <v-item-group v-model="onboarding" class="text-center" mandatory>
+        <v-item v-for="       n in length       " :key="`btn-${n}`" v-slot="{ isSelected, toggle }" :value="n">
+          <v-btn :variant="isSelected ? 'outlined' : 'text'" icon="mdi-record" @click="toggle"></v-btn>
         </v-item>
       </v-item-group>
-      <v-btn icon="mdi-chevron-right" variant="plain" @click=" next "></v-btn>
+      <v-btn icon="mdi-chevron-right" variant="plain" @click="next"></v-btn>
     </VRow>
 
   </FlodyneContainer>
 </template>
 
 <script setup lang="ts">
-  definePageMeta( {
+  definePageMeta({
     layout: 'home'
-  } )
+  })
 
-  const drawer = ref( false )
-  const links = ref( [
+  const drawer = ref(false)
+  const links = ref([
     { title: 'About us', to: '/about' },
     { title: 'Infrastructure', to: '/infrastructure' },
     { title: 'Products', to: '/products' },
     { title: 'Brick Making Machine', to: '/brick-making-machine' },
     { title: 'Blogs', to: '/blogs' },
     { title: 'Contact us', to: '/contact' },
-  ] )
+  ])
 
-  const length = ref( 3 )
-  const onboarding = ref( 1 )
+  const length = ref(3)
+  const onboarding = ref(1)
 
   function next() {
     onboarding.value = onboarding.value + 1 > length.value ? 1 : onboarding.value + 1

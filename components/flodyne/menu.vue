@@ -7,15 +7,15 @@
             <VImg cover width="180" src="/images/logo.svg" alt="Flodyne Logo" />
           </NuxtLink>
         </VCol>
-        <VCol class="text-center" v-if=" $vuetify.display.mdAndUp ">
-          <VBtn v-for="       link in links       " :key=" link.title " :to=" link.to " theme="dark" color="white">
+        <VCol class="text-center" v-if="$vuetify.display.mdAndUp">
+          <VBtn v-for="link in links" :key="link.title" :to="link.to" theme="dark" color="white">
             {{ link.title }}
           </VBtn>
         </VCol>
-        <VCol cols="auto" v-if=" $vuetify.display.mdAndUp ">
+        <VCol cols="auto" v-if="$vuetify.display.mdAndUp">
           <VBtn variant="elevated" color="secondary" rounded="pill" class="px-8" to="/contact">Contact Us</VBtn>
         </VCol>
-        <VCol cols="auto" v-if=" $vuetify.display.smAndDown ">
+        <VCol cols="auto" v-if="$vuetify.display.smAndDown">
           <VAppBarNavIcon @click="drawer = !drawer" color="white" />
         </VCol>
       </VRow>
@@ -24,6 +24,6 @@
 </template>
 
 <script setup lang="ts">
-  const drawer = useState<boolean>( 'drawer' )
-  const links = useState<{ title: string, to: string }[]>( 'links' )
+  const drawer = useState<boolean>('drawer')
+  const links = useState<{ title: string, to: string }[]>('links')
 </script>
