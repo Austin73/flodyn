@@ -13,11 +13,10 @@
             Welcome to <div class="text-secondary">Flodyne</div>
           </div>
           <div class="my-10">
-            Flodyne Business specializes in providing innovative solutions for optimizing fluid dynamics across
-            various
-            industries. Our cutting-edge technologies and expertise help businesses achieve greater performance,
-            efficiency,
-            and cost-effectiveness in their operations.
+             Flodyne specializes in providing high-quality hydraulic systems and solutions.
+             With a commitment to excellence and innovation, 
+             we provide a range of products designed to meet the diverse 
+             needs of our clients across various core industries like Steel, Power, Mining & Construction.
           </div>
           <VBtn size="large" rounded="pill" color="secondary"> Optimize your operation</VBtn>
         </div>
