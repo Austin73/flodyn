@@ -72,27 +72,27 @@
           <VBtn color="secondary" rounded="pill">Know More</VBtn>
         </div>
 
-      </VCol>
-      <VCol cols="12" md="6">
+      </VCol >
+      <VCol cols="12" md="6" class="d-flex justify-center align-center mt-100">
         <VRow>
           <VCol cols="6">
             <VCard>
-              <VImg cover src="https://picsum.photos/600/600?random=1" />
+              <VImg cover src="/images/whatwed/HydraulicPowerUnit.jpeg"/>
             </VCard>
           </VCol>
           <VCol cols="6">
             <VCard height="100%" width="100%">
-              <VImg cover src="https://picsum.photos/600/600?random=2" />
+              <VImg cover src="/images/whatwed/HydraulicCylinders1.jpg" />
             </VCard>
           </VCol>
           <VCol cols="6">
             <VCard height="100%" width="100%">
-              <VImg cover src="https://picsum.photos/600/600?random=3" />
+              <VImg cover src="/images/whatwed/HydraulicPowerUnit4.jpeg" />
             </VCard>
           </VCol>
           <VCol cols="6">
             <VCard height="100%" width="100%">
-              <VImg cover src="https://picsum.photos/600/600?random=4" />
+              <VImg cover src="/images/whatwed/HydraulicPowerUnit5.jpeg" />
             </VCard>
           </VCol>
         </VRow>
@@ -111,8 +111,8 @@
     <VRow class="my-16">
       <VCol cols="4">
         <VCard rounded="lg">
-          <VImg src="https://picsum.photos/id/12/600/600" content-class="d-flex flex-column justify-space-between">
-            <VCardTitle>Flodyne Machine</VCardTitle>
+          <VImg src="/images/products/HydraulicCylinders.jpg" content-class="d-flex flex-column justify-space-between">
+            <VCardTitle>Hydraulic Cylinders</VCardTitle>
             <VCardItem>
               <VBtn color="secondary" class="px-8">Learn More</VBtn>
             </VCardItem>
@@ -121,18 +121,18 @@
       </VCol>
       <VCol cols="4">
         <VCard rounded="lg">
-          <VImg src="https://picsum.photos/id/12/600/600" content-class="d-flex flex-column justify-space-between">
-            <VCardTitle>Flodyne Machine</VCardTitle>
+          <VImg src="/images/products/HydraulicFittings&Flanges.jpg" content-class="d-flex flex-column justify-space-between">
+            <VCardTitle>Hydraulic Fittings & Flanges</VCardTitle>
             <VCardItem>
-              <VBtn color="secondary" class="px-8">Learn More</VBtn>
+              <VBtn color="secondary" class="px-10">Learn More</VBtn>
             </VCardItem>
           </VImg>
         </VCard>
       </VCol>
       <VCol cols="4">
         <VCard rounded="lg">
-          <VImg src="https://picsum.photos/id/12/600/600" content-class="d-flex flex-column justify-space-between">
-            <VCardTitle>Flodyne Machine</VCardTitle>
+          <VImg src="/images/products/IndustrialOilFilters.jpg" content-class="d-flex flex-column justify-space-between">
+            <VCardTitle>Industrial Oil Filters</VCardTitle>
             <VCardItem>
               <VBtn color="secondary" class="px-8">Learn More</VBtn>
             </VCardItem>
@@ -208,7 +208,8 @@
       </VCol>
       <VCol cols="6" md="3">
         <VBtn icon color="primary" size="120">
-          <VIcon icon="mdi-check" size="40"></VIcon>
+          <!-- <VIcon icon="mdi-check" size="40"></VIcon> -->
+          <font-awesome-icon :icon="['fas', 'handshake']" />
         </VBtn>
         <h4 class="mt-8 mb-2 text-h6 font-weight-bold">Quality Manufacture</h4>
         <div>Development and manufacturing in Germany</div>
