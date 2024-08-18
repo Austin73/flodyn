@@ -18,7 +18,7 @@
              we provide a range of products designed to meet the diverse 
              needs of our clients across various core industries like Steel, Power, Mining & Construction.
           </div>
-          <VBtn size="large" rounded="pill" color="secondary"> Optimize your operation</VBtn>
+          <VBtn size="large" rounded="pill" color="secondary"> Hydraulic Solutions, Engineered for Excellence</VBtn>
         </div>
       </VCol>
       <VCol cols="12" md="6">
