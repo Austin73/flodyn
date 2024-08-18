@@ -41,26 +41,32 @@
         <h3 class="text-h3 text-primary">
           What we do
         </h3>
-        <div class="mt-8">At Flodyne Business, we specialize in leveraging cutting-edge technologies and expertise to
-          optimize fluid
-          dynamics across various industries.</div>
+        <div class="mt-8">Flodyne expertise lies in the design, manufacturing and supply of hydraulic equipment, systems and components. Here’s a closer look at what we do:
+</div>
         <div class="mt-8">
-          <strong class="text-secondary">Advanced Computational Fluid Dynamics (CFD) Simulations:</strong>
-          Utilizing state-of-the-art simulation tools, we analyze and model fluid flow, heat transfer, and related
-          phenomena to optimize system performance and efficiency.
+          <strong class="text-secondary">Fly Ash Brick and Paver Block Making Machines: </strong>
+          At Flodyne, we are proud to be at the forefront of sustainable construction technology with our advanced Fly Ash Brick and Paver Block Machines. 
+          Leveraging our expertise in hydraulic engineering,
+           we design and manufacture state-of-the-art machines that produce high-quality fly ash bricks, a crucial component for eco-friendly building projects.
         </div>
         <div class="mt-8">
 
-          <strong class="text-secondary">Customized Fluid Handling Systems:</strong>
-          We design and engineer tailored fluid handling systems to meet the unique requirements of our clients,
-          ensuring
-          seamless operation and maximum productivity.
+          <strong class="text-secondary">Hydraulic Power Units and Valve Stands:</strong>
+          We deliver customised top-of-the-line hydraulic power units (HPUs) and valve stands designed to meet the diverse needs of our clients across various industries.
+           Our HPUs are known for their robust construction, energy efficiency and superior performance.
+
         </div>
         <div class="mt-8">
-          <strong class="text-secondary">Consultancy Services:</strong>
-          Our team of experienced engineers provides personalized consultancy services to address specific challenges
-          and
-          optimize fluid dynamics in existing systems, processes, and facilities.
+          <strong class="text-secondary">Hydraulic Cylinders:</strong>
+          Flodyne hydraulic cylinders are built with high-quality materials to ensure that they withstand the toughest operating conditions.
+           The unique design and cutting-edge manufacturing facility of hydraulic cylinders provides long-lasting durability and reliable performance, reducing downtime and maintenance costs.
+
+        </div>
+
+        <div class="mt-8">
+          <strong class="text-secondary">Oil Filtration Systems:</strong>
+          Our Filtration Trolley is a portable with high efficiency designed to ensure your hydraulic and lubrication fluids remain clean and free from contaminants, 
+          enhancing the performance and lifespan of your equipment.
         </div>
         <div class="mt-8">
           <VBtn color="secondary" rounded="pill">Know More</VBtn>
@@ -99,8 +105,8 @@
     <template #title>Product & Services <span class="text-secondary">We Offer</span></template>
     <template #subtitle>
 
-      At Flodyne Business, we specialize in leveraging cutting-edge technologies and expertise to optimize fluid
-      dynamics across various industries. Our comprehensive suite of services includes:
+      We specialize in providing top-tier hydraulic solutions and services tailored to meet the diverse needs of various core industries. 
+      Our commitment to quality, innovation and customer satisfaction drives us to deliver following products and services:
     </template>
     <VRow class="my-16">
       <VCol cols="4">
