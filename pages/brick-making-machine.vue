@@ -2,7 +2,7 @@
   <FlodyneContainer>
     <template #title
       ><span class="text-primary">Bricks Making</span>
-      <span class="text-secondary">Machine</span></template
+      <span class="text-secondary"> Machine</span></template
     >
     <template #subtitle
       >Designing Innovative Experiences With Our Skills In Design And
