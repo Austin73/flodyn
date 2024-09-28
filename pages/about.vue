@@ -158,6 +158,6 @@
     </VRow>
   </FlodyneContainer>
   <FlodyneContainer padless>
-    <VImg cover src="/images/about-us-footer.svg" alt="About Us" rounded="xl" />
+    <VImg cover src="/images/about-us-footer.png" alt="About Us" rounded="xl" />
   </FlodyneContainer>
 </template>
