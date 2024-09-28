@@ -52,7 +52,7 @@ export default {
         "/contact": commonImage,
         "/infrastructure": "/images/infrastructure-header.svg",
         "/products": "/images/products-header.svg",
-        "/brick-making-machine": "/images/bricks.svg",
+        "/brick-making-machine": "/images/bricks.png",
       };
       return otherImages[route.path] || "https://example.com/default-image.jpg"; // Default image
     });
