@@ -91,7 +91,7 @@
         <VRow>
           <VCol cols="6">
             <VCard>
-              <VImg cover src="/images/what-we-do-1.svg" />
+              <VImg cover src="/images/what-we-do-1.png" />
             </VCard>
           </VCol>
           <VCol cols="6">
@@ -129,10 +129,12 @@
       <VCol cols="4">
         <VCard rounded="lg">
           <VImg
-            src="https://picsum.photos/id/12/600/600"
+            src="/images/what-we-do-3.png"
             content-class="d-flex flex-column justify-space-between"
           >
-            <VCardTitle class="text-h5 font-weight-bold"
+            <VCardTitle
+              class="white--text text-h4 font-weight-bold"
+              style="color: white; font-family: 'Roboto', sans-serif"
               >Flodyne Machine</VCardTitle
             >
             <VCardItem>
@@ -144,10 +146,18 @@
       <VCol cols="4">
         <VCard rounded="lg">
           <VImg
-            src="https://picsum.photos/id/12/600/600"
+            cover
+            src="/images/what-we-do-1.png"
             content-class="d-flex flex-column justify-space-between"
           >
-            <VCardTitle class="text-h5 font-weight-bold"
+            <VCardTitle
+              class="white--text text-h4 font-weight-bold"
+              style="
+                color: white;
+                background-color: rgba(0, 0, 0, 0.5);
+                padding: 8px;
+                font-family: 'Roboto', sans-serif;
+              "
               >Flodyne Machine</VCardTitle
             >
             <VCardItem>
@@ -159,10 +169,12 @@
       <VCol cols="4">
         <VCard rounded="lg">
           <VImg
-            src="https://picsum.photos/id/12/600/600"
+            src="/images/what-we-do-3.png"
             content-class="d-flex flex-column justify-space-between"
           >
-            <VCardTitle class="text-h5 font-weight-bold"
+            <VCardTitle
+              class="white--text text-h4 font-weight-bold text-md-h4 text-sm-h6"
+              style="color: white; font-family: 'Roboto', sans-serif"
               >Flodyne Machine</VCardTitle
             >
             <VCardItem>
@@ -202,7 +214,7 @@
       max-width="400"
       cover
       class="mx-auto my-10"
-      src="/images/home/metrics.svg"
+      src="/images/home/matrics.png"
     ></VImg>
   </FlodyneContainer>
 
@@ -211,26 +223,22 @@
     <template #title>Infra/Gallery</template>
     <VRow>
       <VCol cols="12" md="5">
-        <VImg
-          cover
-          src="https://picsum.photos/id/12/600/510"
-          rounded="lg"
-        ></VImg>
+        <VImg cover src="/images/gallery1.png" rounded="lg"></VImg>
       </VCol>
       <VCol cols="12" md="4">
         <VRow>
           <VCol cols="12">
-            <VImg cover src="https://picsum.photos/600/300" rounded="lg"></VImg>
+            <VImg cover src="/images/gallery2.png" rounded="lg"></VImg>
           </VCol>
           <VCol cols="12">
-            <VImg cover src="https://picsum.photos/600/300" rounded="lg"></VImg>
+            <VImg cover src="/images/gallery3.png" rounded="lg"></VImg>
           </VCol>
         </VRow>
       </VCol>
       <VCol cols="12" md="3">
         <VRow>
           <VCol cols="12">
-            <VImg cover src="https://picsum.photos/600/550" rounded="lg"></VImg>
+            <VImg cover src="/images/what-we-do-4.png" rounded="lg"></VImg>
           </VCol>
           <VCol cols="12">
             <VIcon icon="mdi-arrow-right" size="120"></VIcon>
@@ -253,7 +261,7 @@
     <VRow class="my-16 text-center">
       <VCol cols="6" md="3">
         <VBtn icon color="primary" size="120">
-          <VIcon icon="mdi-check" size="40"></VIcon>
+          <VIcon icon="mdi-check" size="40"> </VIcon>
         </VBtn>
         <h4 class="mt-8 mb-2 text-h6 font-weight-bold">Quality Manufacture</h4>
         <div>Development and manufacturing in Germany</div>
@@ -296,7 +304,7 @@
               <VListItem class="px-0">
                 <template #prepend>
                   <VAvatar size="80">
-                    <VImg src="https://picsum.photos/80/80"></VImg>
+                    <VImg src="/images/testimonial.png"></VImg>
                   </VAvatar>
                 </template>
                 <VListItemTitle class="font-weight-bold text-secondary"
@@ -328,7 +336,7 @@
               <VListItem class="px-0">
                 <template #prepend>
                   <VAvatar size="80">
-                    <VImg src="https://picsum.photos/80/80"></VImg>
+                    <VImg src="/images/testimonial.png"></VImg>
                   </VAvatar>
                 </template>
                 <VListItemTitle class="font-weight-bold text-secondary"
@@ -360,7 +368,7 @@
               <VListItem class="px-0">
                 <template #prepend>
                   <VAvatar size="80">
-                    <VImg src="https://picsum.photos/80/80"></VImg>
+                    <VImg src="/images/testimonial.png"></VImg>
                   </VAvatar>
                 </template>
                 <VListItemTitle class="font-weight-bold text-secondary"
