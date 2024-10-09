@@ -82,7 +82,7 @@
           class="font-weight-bold"
           :class="$vuetify.display.mdAndUp ? 'text-h3' : 'text-h4'"
         >
-          <span class="text-primary">Our</span>&nbsp;
+          <span class="text-primary single-space">Our</span>
           <span class="text-secondary">Mission</span>
         </h3>
         <div class="my-16">
@@ -161,3 +161,10 @@
     <VImg cover src="/images/about-us-footer.png" alt="About Us" rounded="xl" />
   </FlodyneContainer>
 </template>
+
+<style scoped>
+.single-space {
+  margin-right: 0.25em; /* or 0.5em for a larger space */
+  display: inline;
+}
+</style>
