@@ -15,7 +15,7 @@
       </VCol>
       <VCol cols="12" md="8" class="font-inter">
         <p>
-          Flowdynepumps started manufacturing Canned Motor pumps in the year
+          Flowdyne pumps started manufacturing Canned Motor pumps in the year
           2012. With time the facilities were increased to manufacture more
           quantity of 0.75 to 75 kw Canned Motor Pumps.
         </p>
