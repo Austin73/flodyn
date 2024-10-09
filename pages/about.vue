@@ -82,7 +82,7 @@
           class="font-weight-bold"
           :class="$vuetify.display.mdAndUp ? 'text-h3' : 'text-h4'"
         >
-          <span class="text-primary">Our</span>
+          <span class="text-primary">Our</span>&nbsp;
           <span class="text-secondary">Mission</span>
         </h3>
         <div class="my-16">
