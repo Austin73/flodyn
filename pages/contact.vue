@@ -50,8 +50,9 @@
 
   <FlodyneContainer>
     <VSheet height="500" rounded="xl">
+  
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9315.968555995054!2d-73.766153459043!3d42.65401377088924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89de0a37fb28709d%3A0xdf2d1d8ef3ead42!2sWashington%20Park!5e0!3m2!1svi!2sus!4v1721690425854!5m2!1svi!2sus"
+       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3698.348211807891!2d82.14303117355936!3d22.036271552417016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a2874b9be422ad7%3A0x331136d69fb3b83e!2sFlodyne%20Corporation!5e0!3m2!1sen!2sin!4v1728666338943!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
         width="100%"
         height="100%"
         style="border: 0"
