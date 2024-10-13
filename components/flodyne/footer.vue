@@ -65,8 +65,11 @@
             <h4 class="text-h6">Address</h4>
             <VList bg-color="transparent" nav density="compact" class="px-0">
               <VListItem
-                href="https://maps.app.goo.gl/Vtza3eFENx5rLc3t6"
-                title="Noida sector 2"
+                href="https://maps.app.goo.gl/ZD4qacqdYis28cdZ6"
+                title="Flodyne Corporation
+Plot no. 71B, Sector B, Sirgitti
+Industrial Area, Bilaspur -
+495004, Chhattisgarh"
                 class="px-0"
               />
             </VList>
