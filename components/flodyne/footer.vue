@@ -62,18 +62,22 @@
           </VCol>
 
           <VCol cols="12" md="3" class="text-left">
-            <h4 class="text-h6">Address</h4>
-            <VList bg-color="transparent" nav density="compact" class="px-0">
-              <VListItem
-                href="https://maps.app.goo.gl/ZD4qacqdYis28cdZ6"
-                title="Flodyne Corporation
-Plot no. 71B, Sector B, Sirgitti
-Industrial Area, Bilaspur -
-495004, Chhattisgarh"
-                class="px-0"
-              />
-            </VList>
-          </VCol>
+  <h4 class="text-h6">Address</h4>
+  <VList bg-color="transparent" nav density="compact" class="px-0">
+    <VListItem 
+      href="https://maps.app.goo.gl/ZD4qacqdYis28cdZ6" 
+      class="px-0 text-wrap"
+    >
+      <span class="address-text">
+        Flodyne Corporation<br/>
+        Plot no. 71B, Sector B, Sirgitti<br/>
+        Industrial Area, Bilaspur -<br/>
+        495004, Chhattisgarh
+      </span>
+    </VListItem>
+  </VList>
+</VCol>
+
         </VRow>
         <VDivider class="my-5"></VDivider>
         <div class="text-center text-caption">
@@ -108,3 +112,10 @@ export default {
   },
 };
 </script>
+<style scoped>
+.address-text {
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+</style>
