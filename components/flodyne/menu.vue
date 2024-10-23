@@ -1,5 +1,5 @@
 <template>
-  <VAppBar color="transparent" theme="dark">
+  <VAppBar theme="dark" color="primary" class="custom-app-bar">
     <VContainer class="pa-0">
       <VRow align="center" justify="space-between" no-gutters>
         <VCol cols="auto">
@@ -15,7 +15,7 @@
             theme="dark"
             :color="isActive(link.to) ? 'green' : 'white'"
           >
-            {{ link.title }}
+            <span class="reduced-spacing">{{ link.title }}</span>
           </VBtn>
         </VCol>
         <VCol cols="auto" v-if="$vuetify.display.mdAndUp">
@@ -44,3 +44,10 @@ const isActive = (linkPath: string) => {
   return route.path === linkPath; // Check if the current path matches the link
 };
 </script>
+.custom-app-bar { background-color: rgba(255, 255, 255, 0.8); /* Adjust the last
+value for opacity */ }
+<style scoped>
+.reduced-spacing {
+  letter-spacing: normal;
+}
+</style>
