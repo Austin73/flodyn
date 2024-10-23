@@ -8,6 +8,7 @@
             cover
             src="/images/product-content.svg"
             alt="Card Image"
+            class="zoom-on-hover"
           />
           <VRow no-gutters align="center">
             <VCol>
@@ -34,4 +35,19 @@
 
 <script lang="ts" setup></script>
 
-<style></style>
+<style scoped>
+.zoom-on-hover {
+  transition: transform 0.5s ease; /* Smooth transition for the zoom effect */
+}
+
+.zoom-on-hover:hover {
+  transform: scale(1.2); /* Zoom in by 10% on hover */
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px; /* Distance from the bottom of the page */
+  right: 20px; /* Distance from the right of the page */
+  z-index: 1000; /* Ensures it's always on top of other elements */
+}
+</style>
