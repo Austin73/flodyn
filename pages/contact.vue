@@ -50,9 +50,8 @@
 
   <FlodyneContainer>
     <VSheet height="500" rounded="xl">
-  
       <iframe
-       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3698.348211807891!2d82.14303117355936!3d22.036271552417016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a2874b9be422ad7%3A0x331136d69fb3b83e!2sFlodyne%20Corporation!5e0!3m2!1sen!2sin!4v1728666338943!5m2!1sen!2sin"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3698.348211807891!2d82.14303117355936!3d22.036271552417016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a2874b9be422ad7%3A0x331136d69fb3b83e!2sFlodyne%20Corporation!5e0!3m2!1sen!2sin!4v1728666338943!5m2!1sen!2sin"
         width="100%"
         height="100%"
         style="border: 0"
@@ -61,6 +60,14 @@
       ></iframe>
     </VSheet>
   </FlodyneContainer>
+  <VBtn
+    class="back-to-top"
+    color="secondary"
+    @click="scrollToTop"
+    rounded="pill"
+  >
+    Back to Top
+  </VBtn>
 </template>
 
 <script lang="ts" setup>
@@ -72,4 +79,19 @@ const product = ref("");
 const description = ref("");
 </script>
 
-<style></style>
+<style scoped>
+.zoom-on-hover {
+  transition: transform 0.5s ease; /* Smooth transition for the zoom effect */
+}
+
+.zoom-on-hover:hover {
+  transform: scale(1.4); /* Zoom in by 10% on hover */
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px; /* Distance from the bottom of the page */
+  right: 20px; /* Distance from the right of the page */
+  z-index: 1000; /* Ensures it's always on top of other elements */
+}
+</style>
