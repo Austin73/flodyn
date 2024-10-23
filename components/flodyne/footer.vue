@@ -7,10 +7,8 @@
             <VImg width="150" src="/images/logo.svg" alt="Flodyne Logo" />
 
             <p class="mt-2">
-              Flodyne Business is a pioneering leader in the realm of fluid
-              dynamics solutions, dedicated to revolutionizing the way
-              industries manage and optimize fluid flow, heat transfer, and
-              related processes.
+              Flodyne drives innovation and efficiency in hydraulic systems,
+              with a focus on precision and reliability.
             </p>
             <div class="mt-10">
               <VBtn
@@ -32,15 +30,17 @@
               bg-color="transparent"
               nav
               density="compact"
-              class="px-0"
+              class="px-0 py-0"
               font-size="20px"
+              rounded="0"
+              active-color="green"
             >
               <VListItem
                 v-for="link in links"
                 :key="link.title"
                 :to="link.to"
                 :title="link.title"
-                class="px-0 text-[20px]"
+                class="px-0 py-0 text-[20px]"
               />
             </VList>
           </VCol>
@@ -49,35 +49,40 @@
             <h4 class="text-h6">Contact us</h4>
             <VList bg-color="transparent" nav density="compact" class="px-0">
               <VListItem
-                href="tel:+91123456789"
-                title="Call: +91 123456789"
+                href="tel:9977779101"
+                title="Office no: +91 9977779101"
                 class="px-0"
               />
               <VListItem
-                href="tel:+91 123456789"
-                title="WhatsApp: +91 123456789"
+                href="tel:+91 9303647126"
+                title="Sales no: +91 9303647126"
+                class="px-0"
+              />
+
+              <VListItem
+                href="mailto:sales@flodyne.in?subject=Inquiry&body=Hello,%20I%20would%20like%20to%20know%20more%20about%20your%20services."
+                title="Email: sales@flodyne.in"
                 class="px-0"
               />
             </VList>
           </VCol>
 
           <VCol cols="12" md="3" class="text-left">
-  <h4 class="text-h6">Address</h4>
-  <VList bg-color="transparent" nav density="compact" class="px-0">
-    <VListItem 
-      href="https://maps.app.goo.gl/ZD4qacqdYis28cdZ6" 
-      class="px-0 text-wrap"
-    >
-      <span class="address-text">
-        Flodyne Corporation<br/>
-        Plot no. 71B, Sector B, Sirgitti<br/>
-        Industrial Area, Bilaspur -<br/>
-        495004, Chhattisgarh
-      </span>
-    </VListItem>
-  </VList>
-</VCol>
-
+            <h4 class="text-h6">Address</h4>
+            <VList bg-color="transparent" nav density="compact" class="px-0">
+              <VListItem
+                href="https://maps.app.goo.gl/ZD4qacqdYis28cdZ6"
+                class="px-0 text-wrap"
+              >
+                <span class="address-text">
+                  Flodyne Corporation<br />
+                  Plot no. 71B, Sector B, Sirgitti<br />
+                  Industrial Area, Bilaspur -<br />
+                  495004, Chhattisgarh
+                </span>
+              </VListItem>
+            </VList>
+          </VCol>
         </VRow>
         <VDivider class="my-5"></VDivider>
         <div class="text-center text-caption">
@@ -103,7 +108,7 @@ export default {
       { title: "About us", to: "/about" },
       { title: "Infrastructure", to: "/infrastructure" },
       { title: "Products", to: "/products" },
-      { title: "Brick Making Machine", to: "/brick-making-machine" },
+      { title: "Brick Making Machine", to: "/fly-ash-brick-machine" },
       { title: "Blogs", to: "/blogs" },
       { title: "Contact us", to: "/contact" },
     ]);
@@ -117,5 +122,4 @@ export default {
   white-space: normal;
   word-wrap: break-word;
 }
-
 </style>
