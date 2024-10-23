@@ -1,45 +1,62 @@
 <template>
   <FlodyneContainer>
+    <video autoplay muted loop playsinline class="background-video">
+      <source src="" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
     <template #title
       ><span class="text-primary">Manufacturing </span
       ><span class="text-secondary">Facility</span>
     </template>
     <template #subtitle
-      >Designing Innovative Experiences With Our Skills In Design And
-      Development</template
+      >Flodyne's state-of-the-art manufacturing facility is located at Bilaspur,
+      Chhattisgarh and is spread across an area of 7400 Square meters, where
+      advanced technology and expert craftsmanship come together to produce
+      world-class hydraulic solutions.</template
     >
 
     <VRow justify="center">
       <VCol cols="12" md="4">
-        <VImg cover src="/images/infrastructure-content-1.svg" rounded="lg" />
+        <VImg
+          cover
+          src="/images/infrastructure-content-1.svg"
+          rounded="lg"
+          class="zoom-on-hover"
+        />
       </VCol>
+
       <VCol cols="12" md="8" class="font-inter">
-        <p>
-          Flowdyne pumps started manufacturing Canned Motor pumps in the year
-          2012. With time the facilities were increased to manufacture more
-          quantity of 0.75 to 75 kw Canned Motor Pumps.
-        </p>
-        <p>
-          Flowdyne pumps manufacturers a number of components in house and also
-          procures from dedicated suppliers. Number of manufacturing machines
-          such as CNC,Lathes, Presses, Welding Unit, and Winding Systems are
-          available for manufacturing of components.
-        </p>
-        <p>
-          Full fledged assembly facilities for motors and pumps are available
-          including balancing machine,testing, painting facilities.
-        </p>
-        <p>
-          Computerized testing facilities are created so as to test and obtain
-          test reports. These facilities are utilized for testing of pumpsets
-          produced by the production department personnel and also for
-          developmental purposes.
-        </p>
-        <p>
-          Computerized accounting & administrative facilities are created for
-          smooth & efficient working so that customer satisfaction can be
-          maximized.
-        </p>
+        <h3 class="mb-5">
+          <span class="text-secondary">
+            Key Features of Our Manufacturing Facility:
+          </span>
+        </h3>
+
+        <ul>
+          <li>
+            <strong class="text-primary">Advanced Machinery: </strong>Our
+            facility is equipped with array of cutting-edge CNC & VMC machines
+            that ensure high precision and consistent quality in every product
+            we manufacture. These technologies allow us to produce complex
+            hydraulic components with tight tolerances and superior finish.
+          </li>
+          <li>
+            <strong class="text-primary">Quality Control: </strong>Quality is at
+            the core of our manufacturing process. Each product undergoes
+            rigorous testing and inspection at various stages of production to
+            ensure it meets the highest standards of performance, durability,
+            and safety. Our quality control systems are ISO 9001:2015 certified
+            from TUV SUD, reflecting our commitment to excellence.
+          </li>
+          <li>
+            <strong class="text-primary">Skilled Workforce: </strong>Our
+            manufacturing success is driven by a team of highly skilled
+            engineers, technicians and operators who are experts in hydraulics.
+            Continuous training and development ensure our workforce remains at
+            the forefront of industry advancements.
+          </li>
+        </ul>
       </VCol>
     </VRow>
   </FlodyneContainer>
@@ -85,7 +102,12 @@
         </ul>
       </VCol>
       <VCol cols="12" md="4">
-        <VImg cover src="https://picsum.photos/400/400" rounded="lg" />
+        <VImg
+          cover
+          src="https://picsum.photos/400/400"
+          rounded="lg"
+          class="zoom-on-hover"
+        />
       </VCol>
     </VRow>
   </FlodyneContainer>
@@ -100,19 +122,20 @@
           Testing <span class="text-secondary">Facilities</span>
         </h3>
         <p>
-          The objective of this page is to lay down a standard procedure for
-          performance tests of Canned Motor Centrifugal Pumps at our test
-          facility.
+          Our Testing Facility is a cornerstone of our commitment for delivering
+          hydraulic solutions that meet the highest standards of performance and
+          reliability. This advanced facility is dedicated to rigorously
+          evaluating our products to ensure they perform optimally in real-world
+          conditions.
         </p>
+        <br />
         <p>
-          Due to rising costs in both the running of pumps and energy, it has
-          become increasingly important to assess and ensure the accurate
-          performance of a pump unit prior to installation. A pump forms an
-          integral part of a plant, however should the pump fail to perform this
-          could result in unnecessary and often costly losses in production. As
-          a result, it has become common practice for purchasers of pump
-          equipment to specify performance testing prior to installation on
-          site.
+          We have all the required measuring instruments like Digital Verniers,
+          Groove verniers, Micro meters, Oil Flow Meters upto 400 LPM, Digital
+          Pressure Gauges, Vaccum Gauges, Temperature Gauges etc. We also have
+          Test Bench for testing of Hydraulic Cylinders & Hydraulic Valve
+          stands. Further we are equipped with inhouse oil testing lab having
+          Laser Particle Analyser & digital patch test imaging machines.
         </p>
         <strong class="text-secondary">Specifications</strong>
         <p>The capacity of the Test Bed is as follows:</p>
@@ -135,7 +158,12 @@
         </ul>
       </VCol>
       <VCol cols="12" md="4">
-        <VImg cover src="/images/infrastructure-2.svg" rounded="lg" />
+        <VImg
+          cover
+          src="/images/infrastructure-2.svg"
+          rounded="lg"
+          class="zoom-on-hover"
+        />
       </VCol>
     </VRow>
   </FlodyneContainer>
@@ -145,10 +173,38 @@
       src="/images/infrastructure-1.svg"
       alt="About Us"
       rounded="xl"
+      class="zoom-on-hover"
     />
   </FlodyneContainer>
+  <VBtn
+    class="back-to-top"
+    color="secondary"
+    @click="scrollToTop"
+    rounded="pill"
+  >
+    Back to Top
+  </VBtn>
 </template>
 
 <script lang="ts" setup></script>
 
-<style></style>
+<style scoped>
+ul li {
+  margin-bottom: 1rem; /* Adjust this value for desired spacing */
+}
+
+.zoom-on-hover {
+  transition: transform 0.5s ease; /* Smooth transition for the zoom effect */
+}
+
+.zoom-on-hover:hover {
+  transform: scale(1.1); /* Zoom in by 10% on hover */
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px; /* Distance from the bottom of the page */
+  right: 20px; /* Distance from the right of the page */
+  z-index: 1000; /* Ensures it's always on top of other elements */
+}
+</style>
