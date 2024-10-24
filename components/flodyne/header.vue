@@ -17,7 +17,7 @@
         "
       >
         {{ pageTitle }}
-        <!-- <video autoplay muted loop playsinline class="background-video">
+        <!-- <video controls loading="lazy" autoplay muted loop playsinline class="background-video">
           <source :src="backgroundVideo" type="video/mp4" />
           Your browser does not support the video tag.
         </video> -->
