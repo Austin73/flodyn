@@ -370,29 +370,14 @@
   <FlodyneContainer padless>
     <VRow class="d-flex align-center justify-center">
       <!-- Previous Button -->
-      <VCol cols="1" class="text-center">
-        <VIcon
-          icon="mdi-arrow-left"
-          size="40"
-          class="pointer"
-          @click="goPrev"
-        ></VIcon>
-      </VCol>
+     
 
       <!-- Logo Items -->
       <VCol cols="2" v-for="(logo, index) in displayedLogos" :key="index">
         <VImg :src="logo" max-width="120"></VImg>
       </VCol>
 
-      <!-- Next Button -->
-      <VCol cols="1" class="text-center">
-        <VIcon
-          icon="mdi-arrow-right"
-          size="40"
-          class="pointer"
-          @click="goNext"
-        ></VIcon>
-      </VCol>
+   
     </VRow>
   </FlodyneContainer>
   <!-- Testimonials -->
@@ -618,7 +603,7 @@ const allLogos = ref([
 ]);
 
 // Number of logos to display at a time
-const logosToShow = ref(5); // Show 5 logos at a time
+const logosToShow = ref(6); // Show 5 logos at a time
 
 // Index for the current visible set of logos
 const currentLogoSetIndex = ref(0);
