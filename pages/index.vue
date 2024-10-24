@@ -158,79 +158,80 @@
       commitment to quality, innovation and customer satisfaction drives us to
       deliver following products and services:
     </template>
-    <VRow class="my-16">
-      <VCol cols="4">
-        <VCard rounded="xl">
-          <VImg
-            src="/images/productandservices/1.jpeg"
-            content-class="d-flex flex-column justify-space-between"
-            class="zoom-on-hover"
-          >
-            <VCardTitle
-              class="white--text text-h4 font-weight-bold d-flex justify-center zoom-on-hover"
-              style="
-                color: white;
-                background-color: rgba(0, 0, 0, 0.5);
-                padding: 8px;
-                font-family: 'Roboto', sans-serif;
-              "
-              >Flodyne Machine</VCardTitle
-            >
-            <VCardItem class="d-flex justify-center">
-              <VBtn color="secondary" class="px-8">Learn More</VBtn>
-            </VCardItem>
-          </VImg>
-        </VCard>
-      </VCol>
-      <VCol cols="4">
-        <VCard rounded="xl">
-          <VImg
-            cover
-            src="/images/productandservices/2.jpeg"
-            content-class="d-flex flex-column justify-space-between"
-            class="zoom-on-hover"
-          >
-            <VCardTitle
-              class="white--text text-h4 font-weight-bold d-flex justify-center"
-              style="
-                color: white;
-                background-color: rgba(0, 0, 0, 0.5);
-                padding: 8px;
-                font-family: 'Roboto', sans-serif;
-              "
-              >Flodyne Machine</VCardTitle
-            >
-            <VCardItem class="d-flex justify-center">
-              <VBtn color="secondary" class="px-8">Learn More</VBtn>
-            </VCardItem>
-          </VImg>
-        </VCard>
-      </VCol>
-      <VCol cols="4">
-        <VCard rounded="xl">
-          <VImg
-            src="/images/productandservices/3.jpeg"
-            content-class="d-flex flex-column justify-space-between"
-            class="zoom-on-hover"
-          >
-            <VCardTitle
-              class="white--text text-h4 font-weight-bold text-md-h4 text-sm-h6 d-flex justify-center"
-              style="
-                color: white;
-                background-color: rgba(0, 0, 0, 0.5);
-                padding: 8px;
-                font-family: 'Roboto', sans-serif;
-              "
-            >
-              Flodyne Machine
-            </VCardTitle>
-            <VCardItem class="d-flex justify-center">
-              <VBtn color="secondary" class="px-8">Learn More</VBtn>
-            </VCardItem>
-          </VImg>
-        </VCard>
-      </VCol>
-    </VRow>
+  <VRow class="my-16">
+  <VCol cols="12" md="4">
+    <VCard rounded="xl">
+      <VImg
+        src="/images/productandservices/1.jpeg"
+        content-class="d-flex flex-column justify-space-between"
+        class="zoom-on-hover"
+      >
+        <VCardTitle
+          class="white--text text-h4 font-weight-bold d-flex justify-center"
+          style="
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 8px;
+            font-family: 'Roboto', sans-serif;
+          "
+        >Flodyne Machine</VCardTitle>
+        <VCardItem class="d-flex justify-center">
+          <VBtn color="secondary" class="px-8">Learn More</VBtn>
+        </VCardItem>
+      </VImg>
+    </VCard>
+  </VCol>
+
+  <VCol cols="12" md="4">
+    <VCard rounded="xl">
+      <VImg
+        cover
+        src="/images/productandservices/2.jpeg"
+        content-class="d-flex flex-column justify-space-between"
+        class="zoom-on-hover"
+      >
+        <VCardTitle
+          class="white--text text-h4 font-weight-bold d-flex justify-center"
+          style="
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 8px;
+            font-family: 'Roboto', sans-serif;
+          "
+        >Flodyne Machine</VCardTitle>
+        <VCardItem class="d-flex justify-center">
+          <VBtn color="secondary" class="px-8">Learn More</VBtn>
+        </VCardItem>
+      </VImg>
+    </VCard>
+  </VCol>
+
+  <VCol cols="12" md="4">
+    <VCard rounded="xl">
+      <VImg
+        src="/images/productandservices/3.jpeg"
+        content-class="d-flex flex-column justify-space-between"
+        class="zoom-on-hover"
+      >
+        <VCardTitle
+          class="white--text text-h4 font-weight-bold d-flex justify-center"
+          style="
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 8px;
+            font-family: 'Roboto', sans-serif;
+          "
+        >
+          Flodyne Machine
+        </VCardTitle>
+        <VCardItem class="d-flex justify-center">
+          <VBtn color="secondary" class="px-8">Learn More</VBtn>
+        </VCardItem>
+      </VImg>
+    </VCard>
+  </VCol>
+</VRow>
+
     <VRow justify="center">
       <VCol cols="auto">
         <VBtn
