@@ -51,7 +51,7 @@ export default {
       { title: "About us", to: "/about" },
       { title: "Infrastructure", to: "/infrastructure" },
       { title: "Products", to: "/products" },
-      { title: "Fly Ash Brick Machines", to: "/fly-ash-brick-machine" },
+      { title: "Fly Ash Brick Machine", to: "/fly-ash-brick-machine" },
       { title: "Blogs", to: "/blogs" },
       { title: "Contact us", to: "/contact" },
       { title: "Home", to: "/" },
