@@ -1,35 +1,18 @@
 <template>
   <FlodyneMenu />
 
-  <VCard
-    flat
-    rounded="0"
-    min-height="500px"
-    height="40vh"
-    :style="{ backgroundImage: `url(${backgroundImage})` }"
-    theme="dark"
-  >
+  <VCard v-if="!isRoot" flat rounded="0" min-height="500px" height="40vh"
+    :style="{ backgroundImage: `url(${backgroundImage})` }" theme="dark">
     <VRow align="center" justify="center" class="fill-height">
-      <h1
-        class="text-capitalize font-weight-bold reduced-spacing content-overlay"
-        :class="
-          ($vuetify.display.mdAndUp ? 'text-h1' : 'text-h3', 'green--text')
-        "
-      >
+      <h1 class="text-capitalize font-weight-bold reduced-spacing content-overlay" :class="($vuetify.display.mdAndUp ? 'text-h1' : 'text-h3', 'green--text')
+        ">
         {{ pageTitle }}
         <!-- <video controls loading="lazy" autoplay muted loop playsinline class="background-video">
           <source :src="backgroundVideo" type="video/mp4" />
           Your browser does not support the video tag.
         </video> -->
 
-        <video
-          autoplay
-          muted
-          loop
-          playsinline
-          class="background-video"
-          :key="backgroundVideo"
-        >
+        <video autoplay muted loop playsinline class="background-video" :key="backgroundVideo">
           >
           <source :src="backgroundVideo" type="video/mp4" />
           Your browser does not support the video tag.
@@ -88,8 +71,10 @@ export default {
       };
       return otherVideo[route.path] || "https://example.com/default-image.jpg"; // Default image
     });
-
-    return { drawer, links, pageTitle, backgroundImage, backgroundVideo };
+    const isRoot = computed(() => {
+      return route.path === '/';
+    })
+    return { drawer, links, pageTitle, backgroundImage, backgroundVideo, isRoot };
   },
 };
 </script>
@@ -105,7 +90,8 @@ export default {
   left: 0;
   width: 100%;
   height: 150%;
-  object-fit: cover; /* Ensures the video covers the entire background */
+  object-fit: cover;
+  /* Ensures the video covers the entire background */
   z-index: -1;
 }
 
@@ -117,12 +103,11 @@ export default {
   height: 100%;
   z-index: 1;
   padding: 16px;
-  background: rgba(
-    0,
-    0,
-    0,
-    0.4
-  ); /* Optional: Adds a dark overlay on the video */
+  background: rgba(0,
+      0,
+      0,
+      0.4);
+  /* Optional: Adds a dark overlay on the video */
   display: flex;
   justify-content: center;
   align-items: center;
