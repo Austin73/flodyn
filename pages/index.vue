@@ -1,9 +1,9 @@
 <template>
   <!-- Banner -->
-  <FlodyneContainer color="primary" padless>
-    <VLayout height="64">
+  <FlodyneContainer class="custom-margin-top" color="primary" padless>
+    <!-- <VLayout height="64">
       <FlodyneMenu />
-    </VLayout>
+    </VLayout> -->
 
     <VRow align="center" class="font-Inter">
       <VCol cols="12" md="6">
@@ -26,14 +26,9 @@
             & Construction.
           </div>
           <div>
-            <VBtn
-              rounded="pill"
-              color="secondary text-black"
-              class="reduced-spacing"
-            >
+            <VBtn rounded="pill" color="secondary text-black" class="reduced-spacing">
               <span class="text-white">
-                Hydraulic Solutions,Engineered for Excellence</span
-              >
+                Hydraulic Solutions,Engineered for Excellence</span>
             </VBtn>
             <br />
             <br />
@@ -41,11 +36,14 @@
         </div>
       </VCol>
       <VCol cols="12" md="6">
-        <VImg
-          src="/images/home/Hero page-1@0.5x.png"
-          alt="Flodyne Home Hero"
-          class="zoom-on-hover"
-        />
+        <v-carousel hide-delimiters show-arrows="hover">
+          <v-carousel-item src="/images/home/Hero page-1@0.5x.png" cover></v-carousel-item>
+
+          <v-carousel-item src="/images/home/Hero page-1@0.5x.png" cover></v-carousel-item>
+
+          <v-carousel-item src="/images/home/Hero page-1@0.5x.png" cover></v-carousel-item>
+        </v-carousel>
+        <!-- <VImg src="/images/home/Hero page-1@0.5x.png" alt="Flodyne Home Hero" class="zoom-on-hover" /> -->
       </VCol>
     </VRow>
   </FlodyneContainer>
@@ -68,8 +66,7 @@
           what we do:
         </div>
         <div class="mt-8">
-          <strong class="text-secondary"
-            >Fly Ash Brick and Paver Block Making Machines:
+          <strong class="text-secondary">Fly Ash Brick and Paver Block Making Machines:
           </strong>
           At Flodyne, we are at the forefront of sustainable construction
           technology with our advanced Fly Ash Brick and Paver Block Machines.
@@ -78,9 +75,7 @@
           projects.
         </div>
         <div class="mt-8">
-          <strong class="text-secondary"
-            >Hydraulic Power Units and Valve Stands:</strong
-          >
+          <strong class="text-secondary">Hydraulic Power Units and Valve Stands:</strong>
           We deliver customised top-of-the-line hydraulic power units (HPUs) and
           valve stands designed to meet the diverse needs of our clients across
           various industries. Our HPUs are known for their robust construction,
@@ -108,38 +103,22 @@
         <VRow>
           <VCol cols="6" class="d-flex justify-center">
             <VCard class="ma-2" width="100%">
-              <VImg
-                cover
-                src="/images/whatwedoimage/11.jpg"
-                class="zoom-on-hover"
-              />
+              <VImg cover src="/images/whatwedoimage/11.jpg" class="zoom-on-hover" />
             </VCard>
           </VCol>
           <VCol cols="6" class="d-flex justify-center">
             <VCard class="ma-2" width="100%">
-              <VImg
-                cover
-                src="/images/whatwedoimage/12.jpg"
-                class="zoom-on-hover"
-              />
+              <VImg cover src="/images/whatwedoimage/12.jpg" class="zoom-on-hover" />
             </VCard>
           </VCol>
           <VCol cols="6" class="d-flex justify-center">
             <VCard class="ma-2" width="100%">
-              <VImg
-                cover
-                src="/images/whatwedoimage/13.jpg"
-                class="zoom-on-hover"
-              />
+              <VImg cover src="/images/whatwedoimage/13.jpg" class="zoom-on-hover" />
             </VCard>
           </VCol>
           <VCol cols="6" class="d-flex justify-center">
             <VCard class="ma-2" width="100%">
-              <VImg
-                cover
-                src="/images/whatwedoimage/14.jpg"
-                class="zoom-on-hover"
-              />
+              <VImg cover src="/images/whatwedoimage/14.jpg" class="zoom-on-hover" />
             </VCard>
           </VCol>
         </VRow>
@@ -149,103 +128,74 @@
 
   <!-- Products & Services -->
   <FlodyneContainer color="primary">
-    <template #title
-      >Product & Services <span class="text-secondary">We Offer</span></template
-    >
+    <template #title>Product & Services <span class="text-secondary">We Offer</span></template>
     <template #subtitle>
       We specialize in providing top-tier hydraulic solutions and services
       tailored to meet the diverse needs of various core industries. Our
       commitment to quality, innovation and customer satisfaction drives us to
       deliver following products and services:
     </template>
-  <VRow class="my-16">
-  <VCol cols="12" md="4">
-    <VCard rounded="xl">
-      <VImg
-        src="/images/productandservices/1.jpeg"
-        content-class="d-flex flex-column justify-space-between"
-        class="zoom-on-hover"
-      >
-        <VCardTitle
-          class="white--text text-h4 font-weight-bold d-flex justify-center"
-          style="
+    <VRow class="my-16">
+      <VCol cols="12" md="4">
+        <VCard rounded="xl">
+          <VImg src="/images/productandservices/1.jpeg" content-class="d-flex flex-column justify-space-between"
+            class="zoom-on-hover">
+            <VCardTitle class="white--text text-h4 font-weight-bold d-flex justify-center" style="
             color: white;
             background-color: rgba(0, 0, 0, 0.5);
             padding: 8px;
             font-family: 'Roboto', sans-serif;
-          "
-        >Flodyne Machine</VCardTitle>
-        <VCardItem class="d-flex justify-center">
-          <VBtn color="secondary" class="px-8">Learn More</VBtn>
-        </VCardItem>
-      </VImg>
-    </VCard>
-  </VCol>
+          ">Flodyne Machine</VCardTitle>
+            <VCardItem class="d-flex justify-center">
+              <VBtn color="secondary" class="px-8">Learn More</VBtn>
+            </VCardItem>
+          </VImg>
+        </VCard>
+      </VCol>
 
-  <VCol cols="12" md="4">
-    <VCard rounded="xl">
-      <VImg
-        cover
-        src="/images/productandservices/2.jpeg"
-        content-class="d-flex flex-column justify-space-between"
-        class="zoom-on-hover"
-      >
-        <VCardTitle
-          class="white--text text-h4 font-weight-bold d-flex justify-center"
-          style="
+      <VCol cols="12" md="4">
+        <VCard rounded="xl">
+          <VImg cover src="/images/productandservices/2.jpeg" content-class="d-flex flex-column justify-space-between"
+            class="zoom-on-hover">
+            <VCardTitle class="white--text text-h4 font-weight-bold d-flex justify-center" style="
             color: white;
             background-color: rgba(0, 0, 0, 0.5);
             padding: 8px;
             font-family: 'Roboto', sans-serif;
-          "
-        >Flodyne Machine</VCardTitle>
-        <VCardItem class="d-flex justify-center">
-          <VBtn color="secondary" class="px-8">Learn More</VBtn>
-        </VCardItem>
-      </VImg>
-    </VCard>
-  </VCol>
+          ">Flodyne Machine</VCardTitle>
+            <VCardItem class="d-flex justify-center">
+              <VBtn color="secondary" class="px-8">Learn More</VBtn>
+            </VCardItem>
+          </VImg>
+        </VCard>
+      </VCol>
 
-  <VCol cols="12" md="4">
-    <VCard rounded="xl">
-      <VImg
-        src="/images/productandservices/3.jpeg"
-        content-class="d-flex flex-column justify-space-between"
-        class="zoom-on-hover"
-      >
-        <VCardTitle
-          class="white--text text-h4 font-weight-bold d-flex justify-center"
-          style="
+      <VCol cols="12" md="4">
+        <VCard rounded="xl">
+          <VImg src="/images/productandservices/3.jpeg" content-class="d-flex flex-column justify-space-between"
+            class="zoom-on-hover">
+            <VCardTitle class="white--text text-h4 font-weight-bold d-flex justify-center" style="
             color: white;
             background-color: rgba(0, 0, 0, 0.5);
             padding: 8px;
             font-family: 'Roboto', sans-serif;
-          "
-        >
-          Flodyne Machine
-        </VCardTitle>
-        <VCardItem class="d-flex justify-center">
-          <VBtn color="secondary" class="px-8">Learn More</VBtn>
-        </VCardItem>
-      </VImg>
-    </VCard>
-  </VCol>
-</VRow>
+          ">
+              Flodyne Machine
+            </VCardTitle>
+            <VCardItem class="d-flex justify-center">
+              <VBtn color="secondary" class="px-8">Learn More</VBtn>
+            </VCardItem>
+          </VImg>
+        </VCard>
+      </VCol>
+    </VRow>
 
     <VRow justify="center">
       <VCol cols="auto">
-        <VBtn
-          rounded="circle"
-          variant="outlined"
-          icon="mdi-chevron-left"
-        ></VBtn>
+        <VBtn rounded="circle" variant="outlined" icon="mdi-chevron-left"></VBtn>
       </VCol>
       <VCol cols="auto">
-        <VBtn
-          rounded="circle"
-          variant="outlined"
-          icon="mdi-chevron-right"
-        ></VBtn>
+        <VBtn rounded="circle" variant="outlined" icon="mdi-chevron-right"></VBtn>
       </VCol>
     </VRow>
   </FlodyneContainer>
@@ -258,12 +208,7 @@
       Flodyne Business, we leverage a range of key metrics to ensure that our
       solutions deliver tangible results and drive continuous improvement
     </template>
-    <VImg
-      max-width="400"
-      cover
-      class="mx-auto my-10 zoom-on-hover"
-      src="/images/home/matrics.png"
-    ></VImg>
+    <VImg max-width="400" cover class="mx-auto my-10 zoom-on-hover" src="/images/home/matrics.png"></VImg>
   </FlodyneContainer>
 
   <!-- infra/gallery -->
@@ -272,12 +217,7 @@
 
     <!-- First Row of 4 Images -->
     <VRow>
-      <VCol
-        cols="12"
-        md="3"
-        v-for="(image, index) in currentImages.slice(0, 8)"
-        :key="index"
-      >
+      <VCol cols="12" md="3" v-for="(image, index) in currentImages.slice(0, 8)" :key="index">
         <VImg cover :src="image" class="gallery-image"></VImg>
       </VCol>
     </VRow>
@@ -298,8 +238,7 @@
 
   <FlodyneContainer>
     <template #title>
-      Your Advantages with <span class="text-secondary">Flodyne</span></template
-    >
+      Your Advantages with <span class="text-secondary">Flodyne</span></template>
     <template #subtitle>
       Choosing Flodyne as your hydraulic solutions provider comes with a host of
       advantages designed to ensure your success and satisfaction
@@ -308,12 +247,7 @@
     <VRow class="my-16 text-center">
       <VCol cols="6" md="3">
         <VBtn icon size="120" class="advantage-icon" color="primary">
-          <VImg
-            src="/images/Icon/Artboard 16 copy 2.png"
-            alt="Flodyne Home Hero"
-            width="50"
-            height="50"
-          />
+          <VImg src="/images/Icon/Artboard 16 copy 2.png" alt="Flodyne Home Hero" width="50" height="50" />
         </VBtn>
         <h4 class="mt-8 mb-2 text-h6 font-weight-bold">Unmatched Quality</h4>
       </VCol>
@@ -321,44 +255,23 @@
       <VCol cols="6" md="3">
         <VBtn icon color="primary" size="120" class="advantage-icon">
           <!-- <VIcon icon="mdi-check" size="40"></VIcon> -->
-          <VImg
-            src="/images/Icon/Artboard 16 copy 3.png"
-            alt="Flodyne Home Hero"
-            width="50"
-            height="50"
-          />
+          <VImg src="/images/Icon/Artboard 16 copy 3.png" alt="Flodyne Home Hero" width="50" height="50" />
         </VBtn>
         <h4 class="mt-8 mb-2 text-h6 font-weight-bold">Customized Solution</h4>
       </VCol>
       <VCol cols="6" md="3">
         <VBtn icon color="primary" size="120" class="advantage-icon">
           <!-- <VIcon icon="mdi-check" size="40"></VIcon> -->
-          <VImg
-            src="/images/Icon/Artboard 16 copy 4.png"
-            alt="Flodyne Home Hero"
-            width="50"
-            height="50"
-          />
+          <VImg src="/images/Icon/Artboard 16 copy 4.png" alt="Flodyne Home Hero" width="50" height="50" />
         </VBtn>
         <h4 class="mt-8 mb-2 text-h6 font-weight-bold">
           Expertise & Experience
         </h4>
       </VCol>
       <VCol cols="6" md="3">
-        <VBtn
-          icon
-          color="primary"
-          size="120"
-          aspect-ratio="12"
-          class="advantage-icon"
-        >
+        <VBtn icon color="primary" size="120" aspect-ratio="12" class="advantage-icon">
           <!-- <VIcon icon="mdi-check" size="40"></VIcon> -->
-          <VImg
-            src="/images/Icon/Artboard 16 copy.png"
-            alt="Flodyne Home Hero"
-            width="50"
-            height="50"
-          />
+          <VImg src="/images/Icon/Artboard 16 copy.png" alt="Flodyne Home Hero" width="50" height="50" />
         </VBtn>
         <h4 class="mt-8 mb-2 text-h6 font-weight-bold">
           Comprehensive Support
@@ -370,22 +283,20 @@
   <FlodyneContainer padless>
     <VRow class="d-flex align-center justify-center">
       <!-- Previous Button -->
-     
+
 
       <!-- Logo Items -->
       <VCol cols="2" v-for="(logo, index) in displayedLogos" :key="index">
         <VImg :src="logo" max-width="120"></VImg>
       </VCol>
 
-   
+
     </VRow>
   </FlodyneContainer>
   <!-- Testimonials -->
   <FlodyneContainer>
     <template #title>Testimo<span class="text-secondary">nials</span></template>
-    <template #subtitle
-      >Here are our some clints see what they are saying about Flodyne</template
-    >
+    <template #subtitle>Here are our some clints see what they are saying about Flodyne</template>
     <v-window v-model="onboarding">
       <v-window-item v-for="n in length" :key="`card-${n}`" :value="n">
         <VRow>
@@ -397,19 +308,10 @@
                     <VImg src="/images/testimonial1.jpeg"></VImg>
                   </VAvatar>
                 </template>
-                <VListItemTitle class="font-weight-bold text-black"
-                  >Maneesh Paul</VListItemTitle
-                >
-                <VListItemSubtitle class="text-caption text-black"
-                  >CEO, Company</VListItemSubtitle
-                >
+                <VListItemTitle class="font-weight-bold text-black">Maneesh Paul</VListItemTitle>
+                <VListItemSubtitle class="text-caption text-black">CEO, Company</VListItemSubtitle>
               </VListItem>
-              <v-rating
-                :model-value="5"
-                active-color="yellow"
-                size="x-small"
-                class="ml-n2"
-              ></v-rating>
+              <v-rating :model-value="5" active-color="yellow" size="x-small" class="ml-n2"></v-rating>
               <div class="text-caption">
                 Working with Flodyne Business has been a game-changer for our
                 company. Their expertise in fluid dynamics helped us optimize
@@ -429,19 +331,10 @@
                     <VImg src="/images/testimonial2.jpeg"></VImg>
                   </VAvatar>
                 </template>
-                <VListItemTitle class="font-weight-bold text-black"
-                  >Aditya Roy</VListItemTitle
-                >
-                <VListItemSubtitle class="text-black text-caption"
-                  >CEO, Company</VListItemSubtitle
-                >
+                <VListItemTitle class="font-weight-bold text-black">Aditya Roy</VListItemTitle>
+                <VListItemSubtitle class="text-black text-caption">CEO, Company</VListItemSubtitle>
               </VListItem>
-              <v-rating
-                :model-value="5"
-                active-color="yellow"
-                size="x-small"
-                class="ml-n2"
-              ></v-rating>
+              <v-rating :model-value="5" active-color="yellow" size="x-small" class="ml-n2"></v-rating>
               <div class="text-caption">
                 Our experience with Flodyne Business has been incredibly
                 beneficial. Under the leadership of their team applied advanced
@@ -463,19 +356,10 @@
                     <VImg src="/images/testimonial3.jpeg"></VImg>
                   </VAvatar>
                 </template>
-                <VListItemTitle class="font-weight-bold text-black"
-                  >Sunaina Khan</VListItemTitle
-                >
-                <VListItemSubtitle class="text-black text-caption"
-                  >CEO, Company</VListItemSubtitle
-                >
+                <VListItemTitle class="font-weight-bold text-black">Sunaina Khan</VListItemTitle>
+                <VListItemSubtitle class="text-black text-caption">CEO, Company</VListItemSubtitle>
               </VListItem>
-              <v-rating
-                :model-value="5"
-                active-color="yellow"
-                size="x-small"
-                class="ml-n2"
-              ></v-rating>
+              <v-rating :model-value="5" active-color="yellow" size="x-small" class="ml-n2"></v-rating>
               <div class="text-caption">
                 Collaborating with Flodyne Business has transformed our
                 operations. Their in-depth knowledge of fluid dynamics allowed
@@ -494,29 +378,15 @@
     <VRow justify="space-between" class="mt-16">
       <v-btn icon="mdi-chevron-left" variant="plain" @click="prev"></v-btn>
       <v-item-group v-model="onboarding" class="text-center" mandatory>
-        <v-item
-          v-for="n in length"
-          :key="`btn-${n}`"
-          v-slot="{ isSelected, toggle }"
-          :value="n"
-        >
-          <v-btn
-            :variant="isSelected ? 'outlined' : 'text'"
-            icon="mdi-record"
-            @click="toggle"
-          ></v-btn>
+        <v-item v-for="n in length" :key="`btn-${n}`" v-slot="{ isSelected, toggle }" :value="n">
+          <v-btn :variant="isSelected ? 'outlined' : 'text'" icon="mdi-record" @click="toggle"></v-btn>
         </v-item>
       </v-item-group>
       <v-btn icon="mdi-chevron-right" variant="plain" @click="next"></v-btn>
     </VRow>
   </FlodyneContainer>
 
-  <VBtn
-    class="back-to-top"
-    color="secondary"
-    @click="scrollToTop"
-    rounded="pill"
-  >
+  <VBtn class="back-to-top" color="secondary" @click="scrollToTop" rounded="pill">
     Back to Top
   </VBtn>
 </template>
@@ -650,45 +520,61 @@ const updateDisplayedLogos = () => {
 .text-white {
   color: #a4202033;
 }
+
 .title-container {
   display: flex;
-  flex-direction: column; /* Ensures the texts are stacked */
-  align-items: flex-start; /* Aligns both texts to the left */
+  flex-direction: column;
+  /* Ensures the texts are stacked */
+  align-items: flex-start;
+  /* Aligns both texts to the left */
 }
 
 .welcome-text {
-  max-width: 100%; /* Ensures it doesn't go wider than Flodyne */
-  white-space: nowrap; /* Prevents text from wrapping to the next line */
+  max-width: 100%;
+  /* Ensures it doesn't go wider than Flodyne */
+  white-space: nowrap;
+  /* Prevents text from wrapping to the next line */
 }
 
 .back-to-top {
   position: fixed;
-  bottom: 20px; /* Distance from the bottom of the page */
-  right: 20px; /* Distance from the right of the page */
-  z-index: 1000; /* Ensures it's always on top of other elements */
+  bottom: 20px;
+  /* Distance from the bottom of the page */
+  right: 20px;
+  /* Distance from the right of the page */
+  z-index: 1000;
+  /* Ensures it's always on top of other elements */
 }
 
 .custom-icon-button {
-  padding: 0; /* Remove padding to prevent button size issues */
-  width: auto; /* Set width to auto to fit the image size */
-  height: auto; /* Set height to auto */
+  padding: 0;
+  /* Remove padding to prevent button size issues */
+  width: auto;
+  /* Set width to auto to fit the image size */
+  height: auto;
+  /* Set height to auto */
 }
 
 .zoom-on-hover {
-  transition: transform 0.5s ease; /* Smooth transition for the zoom effect */
+  transition: transform 0.5s ease;
+  /* Smooth transition for the zoom effect */
 }
 
 .zoom-on-hover:hover {
-  transform: scale(1.2); /* Zoom in by 10% on hover */
+  transform: scale(1.2);
+  /* Zoom in by 10% on hover */
 }
 
 .advantage-icon {
-  min-width: 120px; /* Ensure the button has a minimum width */
-  min-height: 120px; /* Ensure the button has a minimum height */
+  min-width: 120px;
+  /* Ensure the button has a minimum width */
+  min-height: 120px;
+  /* Ensure the button has a minimum height */
 }
 
 .advantage-button {
-  object-fit: contain; /* Ensures the image maintains its aspect ratio */
+  object-fit: contain;
+  /* Ensures the image maintains its aspect ratio */
 }
 
 .pointer {
@@ -696,8 +582,14 @@ const updateDisplayedLogos = () => {
 }
 
 .gallery-image {
-  height: 200px; /* Adjust height to your preference */
+  height: 200px;
+  /* Adjust height to your preference */
   width: 100%;
-  object-fit: cover; /* Ensures the image scales without distortion */
+  object-fit: cover;
+  /* Ensures the image scales without distortion */
+}
+
+.custom-margin-top {
+  margin-top: 4rem;
 }
 </style>
